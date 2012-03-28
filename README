@@ -1,0 +1,8 @@
+My Vim configuration
+
+Set up by following the nice tutorial at vimcasts.org
+
+Installation:
+
+	git clone git://github.com/p0iz/vimconf.git ~/.vim
+
