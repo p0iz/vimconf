@@ -1,5 +1,4 @@
-call pathogen#runtime_append_all_bundles()
-call pathogen#helptags()
+call pathogen#infect()
 
 " set the X11 font to use
 set guifont=Inconsolata\ 10
@@ -14,6 +13,8 @@ set guioptions-=m
 colorscheme molokai
 
 filetype plugin on
+syntax on
+
 " Make shift-insert work like in Xterm
 map <S-Insert> <MiddleMouse>
 map! <S-Insert> <MiddleMouse>
@@ -30,10 +31,6 @@ nmap <C-S-l> :tabnext<Enter>
 " Close folds (right arrorw to open
 nmap <C-f> :foldclose<Enter>
 
-" Switch on syntax highlighting if it wasn't on yet.
-if !exists("syntax_on")
-  syntax on
-endif
 
 " Switch on search pattern highlighting.
 set hlsearch
