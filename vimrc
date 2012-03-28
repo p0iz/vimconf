@@ -1,4 +1,7 @@
+set nocompatible
+
 call pathogen#infect()
+call pathogen#helptags()
 
 " set the X11 font to use
 set guifont=Inconsolata\ 10
@@ -10,6 +13,12 @@ set smartindent
 set shiftwidth=4
 set guioptions-=T
 set guioptions-=m
+set number
+
+set hlsearch
+set incsearch
+
+
 colorscheme molokai
 
 filetype plugin on
@@ -30,8 +39,4 @@ nmap <C-S-l> :tabnext<Enter>
 
 " Close folds (right arrorw to open
 nmap <C-f> :foldclose<Enter>
-
-
-" Switch on search pattern highlighting.
-set hlsearch
 
