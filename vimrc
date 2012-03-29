@@ -43,6 +43,8 @@ nmap <C-Down> ]e
 vmap <C-Up> [egv
 vmap <C-Down> ]egv
 
-nmap <F2> zyw:PyDoc @z
 
+" Python stuff
+nmap <F2> byw:Pydoc <C-r>0<Enter>
+nmap <F5> :!python %<Enter>
 
