@@ -4,3 +4,6 @@
 [submodule "bundle/unimpaired"]
 	path = bundle/unimpaired
 	url = https://github.com/tpope/vim-unimpaired.git
+[submodule "bundle/latex-suite"]
+	path = bundle/latex-suite
+	url = https://github.com/gerw/vim-latex-suite.git
