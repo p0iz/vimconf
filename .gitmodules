@@ -7,3 +7,6 @@
 [submodule "bundle/latex-suite"]
 	path = bundle/latex-suite
 	url = https://github.com/gerw/vim-latex-suite.git
+[submodule "bundle/pydoc"]
+	path = bundle/pydoc
+	url = https://github.com/fs111/pydoc.vim.git

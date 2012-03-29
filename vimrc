@@ -18,7 +18,6 @@ set number
 set hlsearch
 set incsearch
 
-
 colorscheme molokai
 
 filetype plugin on
@@ -29,14 +28,21 @@ map <S-Insert> <MiddleMouse>
 map! <S-Insert> <MiddleMouse>
 
 " Ctrl+S to save
-nmap <C-s> :write<Enter>
-
 " Tab management
-nmap <C-S-t> :tabnew<Enter>
-nmap <C-S-w> :quit<Enter>
-nmap <C-S-h> :tabprevious<Enter>
-nmap <C-S-l> :tabnext<Enter>
+nmap <S-t> :tabnew<Enter>
+nmap <S-h> :tabprevious<Enter>
+nmap <S-l> :tabnext<Enter>
+nmap <S-w> :quit<Enter>
 
 " Close folds (right arrorw to open
-nmap <C-f> :foldclose<Enter>
+nmap <C-S-f> :foldclose<Enter>
+
+" Bindings for unimpaired text movement
+nmap <C-Up> [e
+nmap <C-Down> ]e
+vmap <C-Up> [egv
+vmap <C-Down> ]egv
+
+nmap <F2> zyw:PyDoc @z
+
 
