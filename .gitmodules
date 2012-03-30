@@ -13,3 +13,6 @@
 [submodule "bundle/taglist"]
 	path = bundle/taglist
 	url = https://github.com/vim-scripts/taglist.vim.git
+[submodule "bundle/pydiction"]
+	path = bundle/pydiction
+	url = https://github.com/vim-scripts/Pydiction.git
