@@ -27,11 +27,11 @@ syntax on
 map <S-Insert> <MiddleMouse>
 map! <S-Insert> <MiddleMouse>
 
-" Ctrl+S to save
-nmap <C-s> :update<Enter>
 " Tab management
 nmap <S-t> :tabnew<Enter>
+nmap <S-Left> :tabprevious<Enter>
 nmap <S-h> :tabprevious<Enter>
+nmap <S-Right> :tabnext<Enter>
 nmap <S-l> :tabnext<Enter>
 nmap <S-w> :quit<Enter>
 
@@ -40,12 +40,20 @@ nmap <C-S-f> :foldclose<Enter>
 
 " Bindings for unimpaired text movement
 nmap <C-Up> [e
+nmap <C-k> [e
 nmap <C-Down> ]e
+nmap <C-j> ]e
 vmap <C-Up> [egv
+vmap <C-k> [egv
 vmap <C-Down> ]egv
-
+vmap <C-j> ]egv
 
 " Python stuff
 nmap <F2> byw:Pydoc <C-r>0<Enter>
-nmap <F3> :TlistToggle<Enter>
 nmap <F5> :!python %<Enter>
+
+" Taglist
+nmap <F3> :TlistToggle<Enter>
+let Tlist_Exit_OnlyWindow = 1
+let Tlist_GainFocus_On_ToggleOpen = 1
+
