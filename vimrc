@@ -28,6 +28,7 @@ map <S-Insert> <MiddleMouse>
 map! <S-Insert> <MiddleMouse>
 
 " Ctrl+S to save
+nmap <C-s> :update<Enter>
 " Tab management
 nmap <S-t> :tabnew<Enter>
 nmap <S-h> :tabprevious<Enter>
@@ -46,5 +47,5 @@ vmap <C-Down> ]egv
 
 " Python stuff
 nmap <F2> byw:Pydoc <C-r>0<Enter>
+nmap <F3> :TlistToggle<Enter>
 nmap <F5> :!python %<Enter>
-
