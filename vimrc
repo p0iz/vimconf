@@ -49,11 +49,13 @@ vmap <C-Down> ]egv
 vmap <C-j> ]egv
 
 " Python stuff
-nmap <F2> byw:Pydoc <C-r>0<Enter>
-nmap <F5> :!python %<Enter>
+autocmd FileType python nmap <F2> byw:Pydoc <C-r>0<Enter>
+autocmd FileType python nmap <F5> :!python %<Enter>
 
 " Taglist
 nmap <F3> :TlistToggle<Enter>
 let Tlist_Exit_OnlyWindow = 1
 let Tlist_GainFocus_On_ToggleOpen = 1
 
+" NERDtree
+nmap <F4> :NERDTreeToggle<Enter>
