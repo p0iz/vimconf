@@ -8,9 +8,9 @@ set guifont=Inconsolata\ 10
 set mousehide		" Hide the mouse when typing text
 set autoindent
 set autochdir
-set tabstop=4
+set tabstop=2
 set smartindent
-set shiftwidth=4
+set shiftwidth=2
 set guioptions-=T
 set guioptions-=m
 set number
@@ -59,3 +59,9 @@ let Tlist_GainFocus_On_ToggleOpen = 1
 
 " NERDtree
 nmap <F4> :NERDTreeToggle<Enter>
+
+" Popup menu colors
+highlight Pmenu ctermfg=0 ctermbg=3 guibg=grey30
+highlight PmenuSel ctermfg=3 ctermbg=0 guibg=white
+highlight PmenuSbar ctermfg=3 ctermbg=0 guibg=black
+highlight PmenuThumb ctermfg=0 ctermbg=3 guibg=white
