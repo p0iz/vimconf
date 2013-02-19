@@ -57,6 +57,9 @@ autocmd BufRead *
 
 autocmd BufRead,BufNewFile *.vs,*.fs set filetype=glsl
 
+nmap <C-b> :bp<Enter>
+nmap <C-n> :bn<Enter>
+
 " Close folds (right arrorw to open
 nmap <C-S-f> :foldclose<Enter>
 
