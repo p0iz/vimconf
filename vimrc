@@ -16,6 +16,7 @@ set shiftwidth=2
 set guioptions-=T
 set guioptions-=m
 set number
+set expandtab
 
 set hlsearch
 set incsearch
