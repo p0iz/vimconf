@@ -10,22 +10,30 @@ set guifont=Inconsolata\ 10
 set mousehide		" Hide the mouse when typing text
 set autoindent
 set autochdir
-set tabstop=2
+set tabstop=4
+set expandtab
 set smartindent
 set smarttab
 set shiftwidth=2
 set guioptions-=T
 set guioptions-=m
 set number
+set mouse=a
 set expandtab
 
-set hlsearch
 set incsearch
 
 colorscheme molokai
 
 filetype plugin on
 syntax on
+
+" Highlight extra whitespace at the end of a line
+highlight ExtraWhitespace ctermbg=red guibg=red
+autocmd Syntax * syn match ExtraWhitespace /\s\+$/
+
+highlight MixedIndentation ctermbg=darkgreen guibg=lightgreen
+autocmd Syntax * syn match MixedIndentation /^\t\+ \s*\|^ \+\t\s*/
 
 " Make shift-insert work like in Xterm
 map <S-Insert> <MiddleMouse>
@@ -50,6 +58,9 @@ nmap <F4> :BufExplorer<Enter>
 nmap <C-b> :bp<Enter>
 nmap <C-n> :bn<Enter>
 
+" Replace all occurrences
+nmap <F8> :execute ':%s/' . expand('<cword>') . '/' . input('Replace with: ') . '/g'<CR>
+
 " Add the current file's directory to the path if not already present.
 autocmd BufRead *
       \ let s:tempPath=escape(escape(expand("%:p:h"), ' '), '\ ') |
@@ -62,6 +73,13 @@ nmap <C-n> :bn<Enter>
 
 " Close folds (right arrorw to open
 nmap <C-S-f> :foldclose<Enter>
+
+" Cursor movement test
+function! DeleteNextWord()
+    let save_cursor = getpos(".")
+    normal wdw
+    call setpos(".", save_cursor)
+endfunction
 
 " Python stuff
 autocmd FileType python nmap <F2> byw:Pydoc <C-r>0<Enter>
