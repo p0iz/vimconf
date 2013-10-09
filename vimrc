@@ -12,6 +12,7 @@ set autoindent
 set autochdir
 set tabstop=4
 set expandtab
+set smarttab
 set smartindent
 set smarttab
 set shiftwidth=2
