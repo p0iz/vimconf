@@ -12,6 +12,7 @@ set autoindent
 set autochdir
 set tabstop=2
 set smartindent
+set smarttab
 set shiftwidth=2
 set guioptions-=T
 set guioptions-=m
@@ -46,6 +47,7 @@ autocmd BufRead *
       \ let s:tempPath=escape(escape(expand("%:p:h"), ' '), '\ ') |
       \ exec "set path+=".s:tempPath
 
+autocmd BufRead,BufNewFile *.vs,*.fs set filetype=glsl
 
 " Close folds (right arrorw to open
 nmap <C-S-f> :foldclose<Enter>
