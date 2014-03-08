@@ -46,10 +46,6 @@ autocmd BufRead *
       \ let s:tempPath=escape(escape(expand("%:p:h"), ' '), '\ ') |
       \ exec "set path+=".s:tempPath
 
-" Split management
-nmap <C-e> :vsplit<Enter>
-nmap <C-r> :split<Enter>
-nmap <C-t> :close<Enter>
 
 " Close folds (right arrorw to open
 nmap <C-S-f> :foldclose<Enter>
