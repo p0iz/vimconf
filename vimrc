@@ -39,8 +39,15 @@ nmap <S-Right> :tabnext<Enter>
 nmap <S-l> :tabnext<Enter>
 nmap <S-w> :quit<Enter>
 
+" Bufexplorer
+nmap <F4> :BufExplorer<Enter>
+
 " Save
 nmap <C-s> :update<Enter>
+
+" Buffer switching
+nmap <C-b> :bp<Enter>
+nmap <C-n> :bn<Enter>
 
 " Add the current file's directory to the path if not already present.
 autocmd BufRead *
