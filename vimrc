@@ -31,6 +31,11 @@ syntax on
 map <S-Insert> <MiddleMouse>
 map! <S-Insert> <MiddleMouse>
 
+nnoremap <C-Left> :vertical res -1<CR>
+nnoremap <C-Up> :res -1<CR>
+nnoremap <C-Right> :vertical res +1<CR>
+nnoremap <C-Down> :res +1<CR>
+
 " Tab management
 nmap <S-t> :tabnew<Enter>
 nmap <S-Left> :tabprevious<Enter>
