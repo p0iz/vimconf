@@ -1,4 +1,4 @@
-" My suerb vim configuration
+" My superb vim configuration
 set nocompatible
 
 call pathogen#infect()
