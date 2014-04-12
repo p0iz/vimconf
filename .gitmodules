@@ -19,3 +19,6 @@
 [submodule "bundle/bufexplorer"]
 	path = bundle/bufexplorer
 	url = git@github.com:vim-scripts/bufexplorer.zip.git
+[submodule "bundle/autosave"]
+	path = bundle/autosave
+	url = https://github.com/vim-scripts/vim-auto-save.git

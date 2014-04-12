@@ -42,9 +42,6 @@ nmap <S-w> :quit<Enter>
 " Bufexplorer
 nmap <F4> :BufExplorer<Enter>
 
-" Save
-nmap <C-s> :update<Enter>
-
 " Buffer switching
 nmap <C-b> :bp<Enter>
 nmap <C-n> :bn<Enter>
@@ -72,6 +69,9 @@ nmap <F2> :e .<Enter>
 " Clang_complete global config
 let g:clang_auto_select=1 "Select top-most
 let g:clang_complete_auto=0 "Do not open menu automatically
+
+" Enable auto-save
+let g:auto_save=1
 
 " Call make
 map <F5> :make
