@@ -42,7 +42,6 @@ nmap <S-Left> :tabprevious<Enter>
 nmap <S-h> :tabprevious<Enter>
 nmap <S-Right> :tabnext<Enter>
 nmap <S-l> :tabnext<Enter>
-nmap <S-w> :quit<Enter>
 
 " Bufexplorer
 nmap <F4> :BufExplorer<Enter>
@@ -68,18 +67,12 @@ autocmd FileType python nmap <F5> :!python %<Enter>
 " Tagbar toggle
 nmap <F3> :TagbarToggle<Enter>
 
-" Open dirlist
-nmap <F2> :e .<Enter>
-
 " Clang_complete global config
 let g:clang_auto_select=1 "Select top-most
 let g:clang_complete_auto=0 "Do not open menu automatically
 
 " Enable auto-save
 let g:auto_save=1
-
-" Call make
-map <F5> :make
 
 " Popup menu colors
 highlight Pmenu ctermfg=0 ctermbg=3 guibg=grey30
