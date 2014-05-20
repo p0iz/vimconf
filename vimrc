@@ -72,7 +72,7 @@ let g:clang_auto_select=1 "Select top-most
 let g:clang_complete_auto=0 "Do not open menu automatically
 
 " Enable auto-save
-let g:auto_save=1
+let g:auto_save=0
 
 " Popup menu colors
 highlight Pmenu ctermfg=0 ctermbg=3 guibg=grey30
