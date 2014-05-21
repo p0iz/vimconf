@@ -87,11 +87,12 @@ autocmd FileType python nmap <F2> byw:Pydoc <C-r>0<Enter>
 autocmd FileType python nmap <F5> :!python %<Enter>
 
 " Tagbar toggle
-nmap <F3> :TagbarToggle<Enter>
+nmap <F3> :TlistToggle<Enter>
 
 " Clang_complete global config
 let g:clang_auto_select=1 "Select top-most
 let g:clang_complete_auto=0 "Do not open menu automatically
+let g:clang_library_path='/usr/lib/llvm-3.2/lib/'
 
 " Enable auto-save
 let g:auto_save=0
