@@ -36,9 +36,18 @@ autocmd Syntax * syn match ExtraWhitespace /\s\+$/
 highlight MixedIndentation ctermbg=darkgreen guibg=lightgreen
 autocmd Syntax * syn match MixedIndentation /^\t\+ \s*\|^ \+\t\s*/
 
+" Make space leader
+let mapleader = " "
+
 " Make shift-insert work like in Xterm
 map <S-Insert> <MiddleMouse>
 map! <S-Insert> <MiddleMouse>
+
+" Save 
+map <leader>s :w<CR>
+
+" Start a shell and return immediately after it
+map <leader>c :silent !$SHELL<CR><CR>:silent redraw!<CR>
 
 nnoremap <C-Left> :vertical res -1<CR>
 nnoremap <C-Up> :res -1<CR>
