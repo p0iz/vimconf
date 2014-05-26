@@ -95,7 +95,8 @@ endfunction
 autocmd FileType python nmap <F2> byw:Pydoc <C-r>0<Enter>
 autocmd FileType python nmap <F5> :!python %<Enter>
 
-" Tagbar toggle
+" Tagbar 
+let g:Tlist_Exit_OnlyWindow = 1
 nmap <F3> :TlistToggle<Enter>
 
 " Clang_complete global config
