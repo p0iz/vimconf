@@ -10,9 +10,8 @@ set guifont=Inconsolata\ 10
 set mousehide		" Hide the mouse when typing text
 set autoindent
 set autoread
-set tabstop=4
+set tabstop=2
 set expandtab
-set smarttab
 set smartindent
 set smarttab
 set shiftwidth=2
@@ -63,9 +62,6 @@ nmap <S-Left> :tabprevious<Enter>
 nmap <S-h> :tabprevious<Enter>
 nmap <S-Right> :tabnext<Enter>
 nmap <S-l> :tabnext<Enter>
-
-" Bufexplorer
-nmap <F4> :BufExplorer<Enter>
 
 " Buffer switching
 nmap <C-b> :bp<Enter>
