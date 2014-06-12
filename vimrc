@@ -43,6 +43,9 @@ let mapleader = " "
 map <S-Insert> <MiddleMouse>
 map! <S-Insert> <MiddleMouse>
 
+" Open quickfix window
+map <leader>q :copen 20<CR>
+
 " Save 
 map <leader>s :w<CR>
 
