@@ -103,7 +103,8 @@ let g:clang_library_path='/usr/lib/llvm-3.4/lib/'
 let g:auto_save=0
 
 " Popup menu colors
-highlight Pmenu ctermfg=0 ctermbg=3 guibg=grey30
-highlight PmenuSel ctermfg=3 ctermbg=0 guibg=white
-highlight PmenuSbar ctermfg=3 ctermbg=0 guibg=black
-highlight PmenuThumb ctermfg=0 ctermbg=3 guibg=white
+highlight Pmenu ctermfg=darkgreen ctermbg=darkgray guibg=grey30
+highlight PmenuSel ctermfg=black ctermbg=green guibg=white
+highlight PmenuSbar ctermfg=0 ctermbg=darkgray guibg=black
+highlight PmenuThumb ctermfg=0 ctermbg=green guibg=white
+
