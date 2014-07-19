@@ -20,7 +20,7 @@ set guioptions-=m
 set number
 set mouse=a
 set expandtab
-
+set updatetime=500
 set incsearch
 
 colorscheme molokai
