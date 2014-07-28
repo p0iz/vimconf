@@ -99,7 +99,9 @@ nmap <F3> :TlistToggle<Enter>
 let g:clang_auto_select=1 "Select top-most
 let g:clang_complete_auto = 1
 let g:clang_complete_copen = 1
+let g:clang_complete_macros = 1
 let g:clang_periodic_quickfix = 1
+let g:clang_close_preview = 1
 let g:clang_library_path='/usr/lib/llvm-3.4/lib/'
 
 " Enable auto-save
