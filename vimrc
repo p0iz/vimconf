@@ -20,8 +20,11 @@ set guioptions-=m
 set number
 set mouse=a
 set expandtab
-set updatetime=500
+set updatetime=1000
 set incsearch
+set hidden
+set wildmenu
+set scrolloff=3
 
 colorscheme molokai
 
