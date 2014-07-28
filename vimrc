@@ -102,6 +102,10 @@ let g:clang_library_path='/usr/lib/llvm-3.4/lib/'
 " Enable auto-save
 let g:auto_save=0
 
+" Switch declaration/header
+noremap <silent> <leader>h <ESC>:A<CR>
+noremap <silent> <F4> <ESC>:A<CR>
+
 " Popup menu colors
 highlight Pmenu ctermfg=darkgreen ctermbg=darkgray guibg=grey30
 highlight PmenuSel ctermfg=black ctermbg=green guibg=white
