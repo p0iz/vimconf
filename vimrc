@@ -25,6 +25,7 @@ set incsearch
 set hidden
 set wildmenu
 set scrolloff=3
+set cscopequickfix=s-,c-,d-,i-,t-,e-,g-
 
 colorscheme molokai
 
@@ -37,6 +38,14 @@ autocmd Syntax * syn match ExtraWhitespace /\s\+$/
 
 highlight MixedIndentation ctermbg=darkgreen guibg=lightgreen
 autocmd Syntax * syn match MixedIndentation /^\t\+ \s*\|^ \+\t\s*/
+
+" Add a CScope connection at the current dir on Startup
+function! AddCscopeConnection()
+  silent !cscope -bR
+  redraw!
+  silent cscope add .
+endfunction
+autocmd VimEnter * call AddCscopeConnection()
 
 " Make space leader
 let mapleader = " "
