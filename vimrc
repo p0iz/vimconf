@@ -27,6 +27,10 @@ set wildmenu
 set scrolloff=3
 set cscopequickfix=s-,c-,d-,i-,t-,e-,g-
 
+" Custom statusline
+set statusline=%1*%t\ %r%h%w%y%q\ \ [%c,%l/%L\ %0P]\ \ \
+\ %(%m\%m\%m\%)\ ░▒▓%2*%=[ASCII:\ %02B]\ %{SyntasticStatuslineFlag()}%*
+
 colorscheme molokai
 
 filetype plugin on
@@ -127,4 +131,7 @@ highlight Pmenu ctermfg=darkgreen ctermbg=darkgray guibg=grey30
 highlight PmenuSel ctermfg=black ctermbg=green guibg=white
 highlight PmenuSbar ctermfg=0 ctermbg=darkgray guibg=black
 highlight PmenuThumb ctermfg=0 ctermbg=green guibg=white
+
+highlight User1 ctermfg=white ctermbg=black
+highlight User2 ctermfg=black ctermbg=white
 
