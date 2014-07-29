@@ -109,14 +109,11 @@ autocmd FileType python nnoremap <F5> :!python %<Enter>
 let g:Tlist_Exit_OnlyWindow = 1
 nnoremap <F3> :TlistToggle<Enter>
 
-" Clang_complete global config
-let g:clang_auto_select=1 "Select top-most
-let g:clang_complete_auto = 1
-let g:clang_complete_copen = 1
-let g:clang_complete_macros = 1
-let g:clang_periodic_quickfix = 1
-let g:clang_close_preview = 1
-let g:clang_library_path='/usr/lib/llvm-3.4/lib/'
+" Syntastic
+let g:syntastic_check_on_open = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_cpp_check_header = 1
+let g:syntastic_cpp_auto_refresh_includes = 1
 
 " Enable auto-save
 let g:auto_save=0
