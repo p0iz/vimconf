@@ -48,25 +48,25 @@ function! GetCscope()
   redraw!
   silent cscope add .
 endfunction
-map <leader>g :call GetCscope()<CR>
+noremap <leader>g :call GetCscope()<CR>
 
 " Make shift-insert work like in Xterm
-map <S-Insert> <MiddleMouse>
-map! <S-Insert> <MiddleMouse>
+noremap <S-Insert> <MiddleMouse>
+noremap! <S-Insert> <MiddleMouse>
 
 " Open quickfix window
-map <leader>q :copen 20<CR>
+noremap <leader>q :copen 20<CR>
 
 " Save 
-map <leader>s :w<CR>
+noremap <leader>s :w<CR>
 
 " Start a shell and return immediately after it
-map <leader>c :sh<CR>
+noremap <leader>c :sh<CR>
 
 " Leader commands for cscope
 
 " Find symbol
-map <leader>fs :cscope find s <cword><CR><C-t>:copen 20<CR>
+nnoremap <leader>fs :cscope find s <cword><CR><C-t>:copen 20<CR>
 
 nnoremap <C-Left> :vertical res -1<CR>
 nnoremap <C-Up> :res -1<CR>
@@ -74,18 +74,18 @@ nnoremap <C-Right> :vertical res +1<CR>
 nnoremap <C-Down> :res +1<CR>
 
 " Tab management
-nmap <S-t> :tabnew<Enter>
-nmap <S-Left> :tabprevious<Enter>
-nmap <S-h> :tabprevious<Enter>
-nmap <S-Right> :tabnext<Enter>
-nmap <S-l> :tabnext<Enter>
+nnoremap <S-t> :tabnew<Enter>
+nnoremap <S-Left> :tabprevious<Enter>
+nnoremap <S-h> :tabprevious<Enter>
+nnoremap <S-Right> :tabnext<Enter>
+nnoremap <S-l> :tabnext<Enter>
 
 " Buffer switching
-nmap <C-b> :bp<Enter>
-nmap <C-n> :bn<Enter>
+nnoremap <C-b> :bp<Enter>
+nnoremap <C-n> :bn<Enter>
 
 " Replace all occurrences
-nmap <F8> :execute ':%s/' . expand('<cword>') . '/' . input('Replace with: ') . '/g'<CR>
+nnoremap <F8> :execute ':%s/' . expand('<cword>') . '/' . input('Replace with: ') . '/g'<CR>
 
 " Add the current file's directory to the path if not already present.
 autocmd BufRead *
@@ -102,12 +102,12 @@ function! DeleteNextWord()
 endfunction
 
 " Python stuff
-autocmd FileType python nmap <F2> byw:Pydoc <C-r>0<Enter>
-autocmd FileType python nmap <F5> :!python %<Enter>
+autocmd FileType python nnoremap <F2> byw:Pydoc <C-r>0<Enter>
+autocmd FileType python nnoremap <F5> :!python %<Enter>
 
 " Tagbar 
 let g:Tlist_Exit_OnlyWindow = 1
-nmap <F3> :TlistToggle<Enter>
+nnoremap <F3> :TlistToggle<Enter>
 
 " Clang_complete global config
 let g:clang_auto_select=1 "Select top-most
