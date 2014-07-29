@@ -27,7 +27,13 @@ set wildmenu
 set scrolloff=3
 set cscopequickfix=s-,c-,d-,i-,t-,e-,g-
 
+" Ensure 16 colors
+if !has('gui_running')
+  set t_Co=16
+endif
+
 " Custom statusline
+set laststatus=2
 set statusline=%1*%t\ %r%h%w%y%q\ \ [%c,%l/%L\ %0P]\ \ \
 \ %(%m\%m\%m\%)\ ░▒▓%2*%=[ASCII:\ %02B]\ %{SyntasticStatuslineFlag()}%*
 
