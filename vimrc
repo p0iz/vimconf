@@ -5,7 +5,7 @@ call pathogen#infect()
 call pathogen#helptags()
 
 " set the X11 font to use
-set cmdheight=2
+set cmdheight=1
 set guifont=Inconsolata\ 10
 set mousehide		" Hide the mouse when typing text
 set autoindent
@@ -61,7 +61,7 @@ map <leader>q :copen 20<CR>
 map <leader>s :w<CR>
 
 " Start a shell and return immediately after it
-map <leader>c :silent !$SHELL<CR><CR>:silent redraw!<CR>
+map <leader>c :sh<CR>
 
 " Leader commands for cscope
 
