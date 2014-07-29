@@ -39,16 +39,16 @@ autocmd Syntax * syn match ExtraWhitespace /\s\+$/
 highlight MixedIndentation ctermbg=darkgreen guibg=lightgreen
 autocmd Syntax * syn match MixedIndentation /^\t\+ \s*\|^ \+\t\s*/
 
-" Add a CScope connection at the current dir on Startup
-function! AddCscopeConnection()
+" Make space leader
+let mapleader = " "
+
+" Add a CScope connection at the current dir
+function! GetCscope()
   silent !cscope -bR
   redraw!
   silent cscope add .
 endfunction
-autocmd VimEnter * call AddCscopeConnection()
-
-" Make space leader
-let mapleader = " "
+map <leader>g :call GetCscope()<CR>
 
 " Make shift-insert work like in Xterm
 map <S-Insert> <MiddleMouse>
