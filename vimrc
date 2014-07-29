@@ -63,6 +63,11 @@ map <leader>s :w<CR>
 " Start a shell and return immediately after it
 map <leader>c :silent !$SHELL<CR><CR>:silent redraw!<CR>
 
+" Leader commands for cscope
+
+" Find symbol
+map <leader>fs :cscope find s <cword><CR><C-t>:copen 20<CR>
+
 nnoremap <C-Left> :vertical res -1<CR>
 nnoremap <C-Up> :res -1<CR>
 nnoremap <C-Right> :vertical res +1<CR>
