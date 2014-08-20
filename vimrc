@@ -10,7 +10,7 @@ set guifont=Inconsolata\ 10
 set mousehide		" Hide the mouse when typing text
 set autoindent
 set autoread
-set tabstop=2
+set tabstop=4
 set expandtab
 set smartindent
 set smarttab
