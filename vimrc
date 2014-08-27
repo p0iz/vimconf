@@ -58,20 +58,20 @@ function! GetCscope()
   redraw!
   silent cscope add .
 endfunction
-noremap <leader>g :call GetCscope()<CR>
+nnoremap <leader>g :call GetCscope()<CR>
 
 " Make shift-insert work like in Xterm
 noremap <S-Insert> <MiddleMouse>
 noremap! <S-Insert> <MiddleMouse>
 
 " Open quickfix window
-noremap <leader>q :copen 20<CR>
+nnoremap <leader>q :copen 20<CR>
 
 " Save 
-noremap <leader>s :w<CR>
+nnoremap <leader>s :w<CR>
 
 " Start a shell and return immediately after it
-noremap <leader>c :sh<CR>
+nnoremap <leader>c :sh<CR>
 
 " Leader commands for cscope
 
