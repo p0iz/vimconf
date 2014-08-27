@@ -26,6 +26,7 @@ set hidden
 set wildmenu
 set scrolloff=3
 set cscopequickfix=s-,c-,d-,i-,t-,e-,g-
+set confirm
 
 " Ensure 16 colors
 if !has('gui_running')
