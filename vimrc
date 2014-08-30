@@ -24,7 +24,7 @@ set updatetime=1000
 set incsearch
 set hidden
 set wildmenu
-set scrolloff=3
+set scrolloff=10
 set cscopequickfix=s-,c-,d-,i-,t-,e-,g-
 set confirm
 
@@ -38,7 +38,7 @@ set laststatus=2
 set statusline=%1*%t\ %r%h%w%y%q\ \ [%c,%l/%L\ %0P]\ \ \
 \ %(%m\%m\%m\%)\ ░▒▓%2*%=[ASCII:\ %02B]\ %{SyntasticStatuslineFlag()}%*
 
-colorscheme molokai
+colorscheme chlordane
 
 filetype plugin on
 syntax on
