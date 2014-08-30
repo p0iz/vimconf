@@ -71,8 +71,8 @@ nnoremap <leader>q :copen 20<CR>
 " Save 
 nnoremap <leader>s :w<CR>
 
-" Start a shell and return immediately after it
-nnoremap <leader>c :sh<CR>
+" Start a bash shell in ConqueTerm
+nnoremap <leader>c :ConqueTerm bash<CR>
 
 " Leader commands for cscope
 
