@@ -28,9 +28,9 @@ set scrolloff=3
 set cscopequickfix=s-,c-,d-,i-,t-,e-,g-
 set confirm
 
-" Ensure 16 colors
+" Ensure 256 colors
 if !has('gui_running')
-  set t_Co=16
+  set t_Co=256
 endif
 
 " Custom statusline
