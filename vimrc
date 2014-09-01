@@ -38,7 +38,7 @@ set laststatus=2
 set statusline=%1*%t\ %r%h%w%y%q\ \ [%c,%l/%L\ %0P]\ \ \
 \ %(%m\%m\%m\%)\ ░▒▓%2*%=[ASCII:\ %02B]\ %{SyntasticStatuslineFlag()}%*
 
-colorscheme chlordane
+colorscheme chlordane_term
 
 filetype plugin on
 syntax on
