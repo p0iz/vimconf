@@ -15,8 +15,11 @@ set expandtab
 set smartindent
 set smarttab
 set shiftwidth=2
-set guioptions-=T
 set guioptions-=m
+set guioptions-=r
+set guioptions-=l
+set guioptions-=T
+
 set number
 set mouse=a
 set expandtab
