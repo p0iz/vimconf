@@ -121,6 +121,8 @@ autocmd FileType python nnoremap <F5> :!python %<Enter>
 
 " Tagbar 
 let g:Tlist_Exit_OnlyWindow = 1
+let g:Tlist_Close_On_Select = 1
+let g:Tlist_GainFocus_On_ToggleOpen = 1
 nnoremap <F3> :TlistToggle<Enter>
 
 " Syntastic
