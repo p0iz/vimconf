@@ -126,7 +126,6 @@ let g:Tlist_GainFocus_On_ToggleOpen = 1
 nnoremap <F3> :TlistToggle<Enter>
 
 " Syntastic
-let g:syntastic_check_on_open = 1
 let g:syntastic_auto_loc_list = 0
 let g:syntastic_cpp_check_header = 1
 let g:syntastic_cpp_auto_refresh_includes = 1
