@@ -87,6 +87,10 @@ nnoremap <C-Up> :res -1<CR>
 nnoremap <C-Right> :vertical res +1<CR>
 nnoremap <C-Down> :res +1<CR>
 
+" Jump to start/end of line
+noremap <C-h> ^
+noremap <C-l> $
+
 " Tab management
 nnoremap <S-t> :tabnew<Enter>
 nnoremap <S-Left> :tabprevious<Enter>
