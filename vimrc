@@ -31,6 +31,12 @@ set scrolloff=10
 set cscopequickfix=s-,c-,d-,i-,t-,e-,g-
 set confirm
 
+" Backup, swap and undo dirs
+set backup
+set backupdir=~/.vim/backup//
+set directory=~/.vim/swap//
+set undodir=~/.vim/undo//
+
 " Ensure 256 colors
 if !has('gui_running')
   set t_Co=256

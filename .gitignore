@@ -1,1 +1,7 @@
 .netrwhist
+
+# Swap, backup and undo directories
+swap/*
+backup/*
+undo/*
+
