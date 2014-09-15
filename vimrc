@@ -104,10 +104,6 @@ nnoremap <S-h> :tabprevious<Enter>
 nnoremap <S-Right> :tabnext<Enter>
 nnoremap <S-l> :tabnext<Enter>
 
-" Buffer switching
-nnoremap <C-b> :bp<Enter>
-nnoremap <C-n> :bn<Enter>
-
 " Replace all occurrences
 nnoremap <F8> :execute ':%s/' . expand('<cword>') . '/' . input('Replace with: ') . '/g'<CR>
 
