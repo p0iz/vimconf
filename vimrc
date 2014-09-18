@@ -86,8 +86,11 @@ nnoremap <leader>c :ConqueTerm bash<CR>
 " Leader commands for cscope
 
 " Find symbol
-nnoremap <leader>fs :cscope find s <cword><CR><C-t>:copen 20<CR>
+nnoremap <leader>fs :cscope find s <cword><CR><C-o>:copen 20<CR>
+" Find definition 
+nnoremap <leader>fg :cscope find g <cword><CR>
 
+" Resizing stuff
 nnoremap <C-Left> :vertical res -1<CR>
 nnoremap <C-Up> :res -1<CR>
 nnoremap <C-Right> :vertical res +1<CR>
