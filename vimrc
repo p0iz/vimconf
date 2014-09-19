@@ -64,11 +64,11 @@ let mapleader = " "
 
 " Add a CScope connection at the current dir
 function! GetCscope()
-  silent !cscope -bR
+  silent !cscope -bR&
   redraw!
   silent cscope add .
 endfunction
-nnoremap <leader>g :call GetCscope()<CR>
+nnoremap <F10> :call GetCscope()<CR>
 
 " Make shift-insert work like in Xterm
 noremap <S-Insert> <MiddleMouse>
