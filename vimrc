@@ -19,6 +19,7 @@ set guioptions-=m
 set guioptions-=r
 set guioptions-=l
 set guioptions-=T
+set guioptions-=L
 
 set number
 set mouse=a
