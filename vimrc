@@ -30,6 +30,7 @@ set wildmenu
 set scrolloff=10
 set cscopequickfix=s-,c-,d-,i-,t-,e-,g-
 set confirm
+set background=dark
 
 " Backup, swap and undo dirs
 set backup
