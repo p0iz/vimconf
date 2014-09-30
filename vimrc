@@ -60,6 +60,13 @@ autocmd Syntax * syn match ExtraWhitespace /\s\+$/
 highlight MixedIndentation ctermbg=darkgreen guibg=lightgreen
 autocmd Syntax * syn match MixedIndentation /^\t\+ \s*\|^ \+\t\s*/
 
+" Highlight current line in active buffer
+augroup BgHighlight
+  autocmd!
+  autocmd WinEnter * set cul
+  autocmd WinLeave * set nocul
+augroup END
+
 " Make space leader
 let mapleader = " "
 
