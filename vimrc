@@ -162,6 +162,9 @@ let g:auto_save=0
 noremap <silent> <leader>h <ESC>:A<CR>
 noremap <silent> <F4> <ESC>:A<CR>
 
+" AutoComplPop should not ignore case
+let g:acp_ignorecaseOption = 0
+
 " Popup menu colors
 highlight Pmenu ctermfg=darkgreen ctermbg=darkgray guibg=grey30
 highlight PmenuSel ctermfg=black ctermbg=green guibg=white
