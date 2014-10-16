@@ -40,20 +40,15 @@ set backupdir=~/.vim/backup//
 set directory=~/.vim/swap//
 set undodir=~/.vim/undo//
 
-" Ensure 256 colors
-if !has('gui_running')
-  set t_Co=256
-endif
-
 " Custom statusline
 set laststatus=2
 set statusline=%1*%t\ %r%h%w%y%q\ \ [%c,%l/%L\ %0P]\ \ \
 \ %(%m\%m\%m\%)\ ░▒▓%2*%=[ASCII:\ %02B]\ %{SyntasticStatuslineFlag()}%*
 
-colorscheme solarized
-
 filetype plugin on
 syntax on
+
+colorscheme solarized
 
 " Highlight extra whitespace at the end of a line
 highlight ExtraWhitespace ctermbg=red guibg=red
