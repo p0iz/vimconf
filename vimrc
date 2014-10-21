@@ -14,6 +14,7 @@ set tabstop=4
 set expandtab
 set smartindent
 set smarttab
+set smartcase
 set shiftwidth=2
 set guioptions-=m
 set guioptions-=r
