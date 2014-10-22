@@ -162,12 +162,6 @@ let g:neocomplete#enable_auto_select = 1
 noremap <silent> <leader>h <ESC>:A<CR>
 noremap <silent> <F4> <ESC>:A<CR>
 
-" Popup menu colors
-highlight Pmenu ctermfg=darkgreen ctermbg=darkgray guibg=grey30
-highlight PmenuSel ctermfg=black ctermbg=green guibg=white
-highlight PmenuSbar ctermfg=0 ctermbg=darkgray guibg=black
-highlight PmenuThumb ctermfg=0 ctermbg=green guibg=white
-
 highlight User1 ctermfg=white ctermbg=black
 highlight User2 ctermfg=black ctermbg=white
 
