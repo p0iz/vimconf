@@ -10,9 +10,6 @@
 [submodule "bundle/tagbar"]
 	path = bundle/tagbar
 	url = git://github.com/majutsushi/tagbar
-[submodule "bundle/supertab"]
-	path = bundle/supertab
-	url = https://github.com/ervandew/supertab.git
 [submodule "bundle/bufexplorer"]
 	path = bundle/bufexplorer
 	url = git@github.com:vim-scripts/bufexplorer.zip.git
@@ -52,3 +49,15 @@
 [submodule "bundle/tabular"]
 	path = bundle/tabular
 	url = https://github.com/godlygeek/tabular.git
+[submodule "bundle/neco-ghc"]
+	path = bundle/neco-ghc
+	url = https://github.com/eagletmt/neco-ghc.git
+[submodule "bundle/ghcmod-vim"]
+	path = bundle/ghcmod-vim
+	url = https://github.com/eagletmt/ghcmod-vim.git
+[submodule "bundle/vimproc"]
+	path = bundle/vimproc
+	url = https://github.com/Shougo/vimproc.vim.git
+[submodule "bundle/neocomplete"]
+	path = bundle/neocomplete
+	url = https://github.com/Shougo/neocomplete.vim.git
