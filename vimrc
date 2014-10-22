@@ -157,8 +157,6 @@ let g:neocomplete#enable_at_startup = 1
 let g:neocomplete#enable_smart_case = 1
 " Enable auto-select for neocomplete
 let g:neocomplete#enable_auto_select = 1
-" Enable auto-save
-let g:auto_save=0
 
 " Switch declaration/header
 noremap <silent> <leader>h <ESC>:A<CR>
