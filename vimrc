@@ -145,7 +145,8 @@ let g:Tlist_GainFocus_On_ToggleOpen = 1
 nnoremap <F3> :TlistToggle<Enter>
 
 " Syntastic
-let g:syntastic_auto_loc_list = 0
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_aggregate_errors = 1
 let g:syntastic_cpp_check_header = 1
 let g:syntastic_cpp_auto_refresh_includes = 1
 let g:syntastic_cpp_compiler_options = '-fPIE -std=c++11'
