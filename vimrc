@@ -84,6 +84,9 @@ noremap! <S-Insert> <MiddleMouse>
 " Open quickfix window
 nnoremap <leader>q :copen 20<CR>
 
+" Open location list
+nnoremap <leader>l :lopen 20<CR>
+
 " Save 
 nnoremap <leader>s :w<CR>
 
