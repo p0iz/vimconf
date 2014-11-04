@@ -33,7 +33,6 @@ set wildmode=longest:full
 set scrolloff=10
 set cscopequickfix=s-,c-,d-,i-,t-,e-,g-
 set confirm
-set background=dark
 
 " Backup, swap and undo dirs
 set backup
@@ -49,8 +48,7 @@ set statusline=%1*%t\ %r%h%w%y%q\ [col:%c\ line:%l/%L\ %0P]\ \ \
 filetype plugin on
 syntax on
 
-let g:solarized_termtrans=1
-colorscheme solarized
+colorscheme strange
 
 " Highlight extra whitespace at the end of a line
 highlight ExtraWhitespace ctermbg=red guibg=red
