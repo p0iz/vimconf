@@ -43,8 +43,8 @@ set undodir=~/.vim/undo//
 
 " Custom statusline
 set laststatus=2
-set statusline=%1*%t\ %r%h%w%y%q\ \ [%c,%l/%L\ %0P]\ \ \
-\ %(%m\%m\%m\%)\ ░▒▓%2*%=[ASCII:\ %02B][%{strftime(\"%H:%M:%S\")}]%{SyntasticStatuslineFlag()}%*
+set statusline=%1*%t\ %r%h%w%y%q\ [col:%c\ line:%l/%L\ %0P]\ \ \
+\ %(%m\%m\%m\%)%=[ASCII:\ %02B][%{strftime(\"%H:%M:%S\")}]%{SyntasticStatuslineFlag()}%*
 
 filetype plugin on
 syntax on
@@ -166,6 +166,4 @@ let g:neocomplete#enable_auto_select = 1
 noremap <silent> <leader>h <ESC>:A<CR>
 noremap <silent> <F4> <ESC>:A<CR>
 
-highlight User1 ctermfg=white ctermbg=black
-highlight User2 ctermfg=black ctermbg=white
 
