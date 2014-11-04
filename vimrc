@@ -164,4 +164,7 @@ let g:neocomplete#enable_auto_select = 1
 noremap <silent> <leader>h <ESC>:A<CR>
 noremap <silent> <F4> <ESC>:A<CR>
 
+" Reselect visual selection after reindent
+vnoremap < <gv
+vnoremap > >gv
 
