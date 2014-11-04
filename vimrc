@@ -168,3 +168,6 @@ noremap <silent> <F4> <ESC>:A<CR>
 vnoremap < <gv
 vnoremap > >gv
 
+" Disable all vim2hs UTF-8 conceals
+let g:haskell_conceal = 0
+
