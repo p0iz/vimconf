@@ -9,7 +9,7 @@
 	url = https://github.com/fs111/pydoc.vim.git
 [submodule "bundle/tagbar"]
 	path = bundle/tagbar
-	url = git://github.com/majutsushi/tagbar
+	url = https://github.com/majutsushi/tagbar.git
 [submodule "bundle/bufexplorer"]
 	path = bundle/bufexplorer
 	url = git@github.com:vim-scripts/bufexplorer.zip.git
@@ -25,9 +25,6 @@
 [submodule "bundle/vim-qml"]
 	path = bundle/vim-qml
 	url = https://github.com/peterhoeg/vim-qml.git
-[submodule "bundle/taglist"]
-	path = bundle/taglist
-	url = https://github.com/vim-scripts/taglist.vim.git
 [submodule "bundle/vim-snippets"]
 	path = bundle/vim-snippets
 	url = https://github.com/honza/vim-snippets.git

@@ -137,10 +137,11 @@ autocmd FileType python nnoremap <F2> byw:Pydoc <C-r>0<Enter>
 autocmd FileType python nnoremap <F5> :!python %<Enter>
 
 " Tagbar 
-let g:Tlist_Exit_OnlyWindow = 1
-let g:Tlist_Close_On_Select = 1
-let g:Tlist_GainFocus_On_ToggleOpen = 1
-nnoremap <F3> :TlistToggle<Enter>
+let g:tagbar_left = 1
+let g:tagbar_autoclose = 1
+let g:tagbar_autofocus = 1
+let g:tagbar_compact = 1
+nnoremap <F3> :TagbarToggle<Enter>
 
 " Syntastic
 let g:syntastic_always_populate_loc_list = 1
