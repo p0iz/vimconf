@@ -145,10 +145,7 @@ nnoremap <F3> :TagbarToggle<Enter>
 
 " Syntastic
 let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_aggregate_errors = 1
-let g:syntastic_cpp_check_header = 1
-let g:syntastic_cpp_auto_refresh_includes = 1
-let g:syntastic_cpp_compiler_options = '-fPIE -std=c++11'
+let g:syntastic_cpp_compiler_options = '-std=c++11'
 let g:syntastic_error_symbol = "✗"
 let g:syntastic_warning_symbol = "⚠"
 " Next add some common include dirs for Syntastic to search
