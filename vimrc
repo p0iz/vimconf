@@ -118,6 +118,9 @@ nnoremap <S-l> :tabnext<Enter>
 " Replace all occurrences
 nnoremap <F8> :execute ':%s/' . expand('<cword>') . '/' . input('Replace with: ') . '/g'<CR>
 
+" Jump to tag
+nnoremap gt :execute ':tag ' . expand('<cword>')<CR>
+
 " Add the current file's directory to the path if not already present.
 autocmd BufRead *
       \ let s:tempPath=escape(escape(expand("%:p:h"), ' '), '\ ') |
