@@ -171,3 +171,6 @@ vnoremap > >gv
 " Disable all vim2hs UTF-8 conceals
 let g:haskell_conceal = 0
 
+" Easytags
+let g:easytags_auto_highlight = 0
+
