@@ -157,7 +157,6 @@ let g:syntastic_cpp_include_dirs = ['/usr/include/qt5', '/usr/include/qt5/QtConc
 " Neocomplete.
 let g:neocomplete#enable_at_startup = 1
 let g:neocomplete#enable_smart_case = 1
-let g:neocomplete#enable_auto_select = 1
 let g:neocomplete#enable_ignore_case = 1
 
 " Switch declaration/header
