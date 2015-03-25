@@ -4,4 +4,4 @@
 swap/*
 backup/*
 undo/*
-
+*.pyc
