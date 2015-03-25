@@ -37,18 +37,12 @@
 [submodule "bundle/tabular"]
 	path = bundle/tabular
 	url = https://github.com/godlygeek/tabular.git
-[submodule "bundle/neco-ghc"]
-	path = bundle/neco-ghc
-	url = https://github.com/eagletmt/neco-ghc.git
 [submodule "bundle/ghcmod-vim"]
 	path = bundle/ghcmod-vim
 	url = https://github.com/eagletmt/ghcmod-vim.git
 [submodule "bundle/vimproc"]
 	path = bundle/vimproc
 	url = https://github.com/Shougo/vimproc.vim.git
-[submodule "bundle/neocomplete"]
-	path = bundle/neocomplete
-	url = https://github.com/Shougo/neocomplete.vim.git
 [submodule "bundle/vim2hs"]
 	path = bundle/vim2hs
 	url = https://github.com/dag/vim2hs.git
@@ -58,3 +52,6 @@
 [submodule "bundle/ag"]
 	path = bundle/ag
 	url = https://github.com/rking/ag.vim
+[submodule "bundle/YouCompleteMe"]
+	path = bundle/YouCompleteMe
+	url = https://github.com/Valloric/YouCompleteMe.git
