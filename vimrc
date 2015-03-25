@@ -164,5 +164,6 @@ vnoremap > >gv
 " Disable all vim2hs UTF-8 conceals
 let g:haskell_conceal = 0
 
-" Set  the global defaults for YouCompleteMe flags
+" Set YouCompleteMe options
 let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
+let g:ycm_semantic_triggers = {'haskell' : ['.']}
