@@ -167,3 +167,8 @@ let g:haskell_conceal = 0
 " Set YouCompleteMe options
 let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
 let g:ycm_semantic_triggers = {'haskell' : ['.']}
+
+" Flake8
+let g:flake8_show_in_gutter = 1
+autocmd BufWritePost ft=python call Flake8()
+
