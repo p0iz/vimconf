@@ -34,6 +34,10 @@ set scrolloff=10
 set cscopequickfix=s-,c-,d-,i-,t-,e-,g-
 set confirm
 
+" Set a better title
+autocmd BufEnter * let &titlestring = $USER . "@" . hostname() . ' [' . expand("%:t") . "]"
+set title
+
 " Backup, swap and undo dirs
 set backup
 set backupdir=~/.vim/backup//
