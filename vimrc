@@ -147,7 +147,9 @@ autocmd FileType python nnoremap <F5> :!python %<Enter>
 let g:tagbar_left = 1
 let g:tagbar_autofocus = 1
 let g:tagbar_compact = 1
+let g:tagbar_autoclose = 1
 nnoremap <F3> :TagbarToggle<Enter>
+nnoremap <leader>gb :TagbarToggle<Enter>
 
 " Syntastic
 let g:syntastic_always_populate_loc_list = 1
