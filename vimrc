@@ -52,7 +52,8 @@ set statusline=%1*%t\ %r%h%w%y%q\ [col:%c\ line:%l/%L\ %0P]\ \ \
 filetype plugin on
 syntax on
 
-colorscheme github
+set background=dark
+colorscheme gruvbox
 
 " Highlight extra whitespace at the end of a line
 highlight ExtraWhitespace ctermbg=red guibg=red
