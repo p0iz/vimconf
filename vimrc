@@ -52,6 +52,7 @@ set statusline=%1*%t\ %r%h%w%y%q\ [col:%c\ line:%l/%L\ %0P]\ \ \
 filetype plugin on
 syntax on
 
+set t_Co=256
 set background=dark
 colorscheme gruvbox
 
