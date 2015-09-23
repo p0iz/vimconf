@@ -56,6 +56,15 @@ set t_Co=256
 set background=dark
 colorscheme gruvbox
 
+" Normal mode in current buffer shows relative line numbers
+set relativenumber
+autocmd FocusLost * set norelativenumber
+autocmd FocusGained * set relativenumber
+autocmd BufEnter * set relativenumber
+autocmd BufLeave * set norelativenumber
+autocmd InsertEnter * set norelativenumber
+autocmd InsertLeave * set relativenumber
+
 " Highlight extra whitespace at the end of a line
 highlight ExtraWhitespace ctermbg=red guibg=red
 autocmd Syntax * syn match ExtraWhitespace /\s\+$/
