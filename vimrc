@@ -149,13 +149,6 @@ autocmd BufRead *
 
 autocmd BufRead,BufNewFile *.vs,*.fs set filetype=glsl
 
-" Cursor movement test
-function! DeleteNextWord()
-    let save_cursor = getpos(".")
-    normal wdw
-    call setpos(".", save_cursor)
-endfunction
-
 " Python stuff
 autocmd FileType python nnoremap <F2> byw:Pydoc <C-r>0<Enter>
 autocmd FileType python nnoremap <F5> :!python %<Enter>
