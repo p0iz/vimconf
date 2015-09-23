@@ -29,7 +29,7 @@ set updatetime=1000
 set incsearch
 set hidden
 set wildmenu
-set wildmode=longest:full
+set wildmode=full
 set scrolloff=10
 set cscopequickfix=s-,c-,d-,i-,t-,e-,g-
 set confirm
