@@ -38,10 +38,9 @@ set confirm
 autocmd BufEnter * let &titlestring = $USER . "@" . hostname() . ' [' . expand("%:t") . "]"
 set title
 
-" Backup, swap and undo dirs
-set backup
-set backupdir=~/.vim/backup//
-set directory=~/.vim/swap//
+" Backup, swap and undo
+set nobackup
+set noswapfile
 set undodir=~/.vim/undo//
 
 " Custom statusline
