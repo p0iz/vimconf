@@ -109,8 +109,8 @@ nnoremap <leader>c :ConqueTerm bash<CR>
 " Toggle Limelight
 nnoremap <leader>L :Limelight!! 0.7<CR>
 
-" GoYo
-nnoremap <leader>gy :Goyo<CR>
+" GoYo (with 120 char lines)
+nnoremap <leader>gy :Goyo 120<CR>
 
 " Leader commands for cscope
 
