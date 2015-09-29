@@ -139,8 +139,8 @@ nnoremap <S-l> :tabnext<Enter>
 " Replace all occurrences
 nnoremap <F8> :execute ':%s/' . expand('<cword>') . '/' . input('Replace with: ') . '/g'<CR>
 
-" Select a tag matching the text under the cursor
-nnoremap gt :execute ':ts ' . expand('<cword>')<CR>
+" Jump to the tag matching the text under the cursor
+nnoremap gt :execute ':tj ' . expand('<cword>')<CR>
 
 " Add the current file's directory to the path if not already present.
 autocmd BufRead *
