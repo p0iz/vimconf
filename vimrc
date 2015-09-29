@@ -106,8 +106,8 @@ nnoremap <leader>s :w<CR>
 " Start a bash shell in ConqueTerm
 nnoremap <leader>c :ConqueTerm bash<CR>
 
-" Enable Limelight
-nnoremap <leader>ll :Limelight!! 0.7<CR>
+" Toggle Limelight
+nnoremap <leader>L :Limelight!! 0.7<CR>
 
 " GoYo
 nnoremap <leader>gy :Goyo<CR>
