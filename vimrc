@@ -6,7 +6,7 @@ call pathogen#helptags()
 
 " set the X11 font to use
 set cmdheight=1
-set guifont=Inconsolata\ 10
+set guifont=FantasqueSansMono\ 12
 set mousehide		" Hide the mouse when typing text
 set autoindent
 set autoread
