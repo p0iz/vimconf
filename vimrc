@@ -4,10 +4,15 @@ set nocompatible
 call pathogen#infect()
 call pathogen#helptags()
 
-" set the X11 font to use
+" set the GUI font to use
+if has("gui_gtk2")
+  set guifont=FantasqueSansMono\ 12
+elseif has("gui_win32")
+  set guifont=Fantasque_Sans_Mono:h12:cANSI
+endif
+
 set backspace=indent,eol,start
 set cmdheight=1
-set guifont=FantasqueSansMono\ 12
 set mousehide		" Hide the mouse when typing text
 set autoindent
 set autoread
