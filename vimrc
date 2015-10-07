@@ -178,9 +178,16 @@ vnoremap > >gv
 " Disable all vim2hs UTF-8 conceals
 let g:haskell_conceal = 0
 
-" Set YouCompleteMe options
-let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
-let g:ycm_semantic_triggers = {'haskell' : ['.']}
+" neocomplete
+let g:neocomplete#enable_at_startup = 1
+let g:neocomplete#enable_smart_case = 1
+let g:neocomplete#sources#syntax#min_keyword_length = 3
+" neocomplete keybindings
+inoremap <expr><C-g>     neocomplete#undo_completion()
+inoremap <expr><C-l>     neocomplete#complete_common_string()
+
+" Tab completion for popup menu
+inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
 
 " Flake8
 let g:flake8_show_in_gutter = 1
