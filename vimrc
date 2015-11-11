@@ -16,7 +16,7 @@ set cmdheight=1
 set mousehide		" Hide the mouse when typing text
 set autoindent
 set autoread
-set tabstop=4
+set tabstop=2
 set expandtab
 set smartindent
 set smarttab
