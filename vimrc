@@ -166,3 +166,6 @@ inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
 let g:flake8_show_in_gutter = 1
 autocmd BufWritePost ft=python call Flake8()
 
+" Do not traverse SCM with command-t
+let g:CommandTTraverseSCM = 'pwd'
+
