@@ -88,14 +88,6 @@ augroup END
 " Make space leader
 let mapleader = " "
 
-" Add a CScope connection at the current dir
-function! GetCscope()
-  silent !cscope -bR&
-  redraw!
-  silent cscope add .
-endfunction
-nnoremap <F10> :call GetCscope()<CR>
-
 " Make shift-insert work like in Xterm
 noremap <S-Insert> <MiddleMouse>
 noremap! <S-Insert> <MiddleMouse>
@@ -109,21 +101,11 @@ nnoremap <leader>l :lopen 20<CR>
 " Save 
 nnoremap <leader>s :w<CR>
 
-" Start a bash shell in ConqueTerm
-nnoremap <leader>c :ConqueTerm bash<CR>
-
 " Toggle Limelight
 nnoremap <leader>L :Limelight!! 0.7<CR>
 
 " GoYo (with 120 char lines)
 nnoremap <leader>gy :Goyo 120<CR>
-
-" Leader commands for cscope
-
-" Find symbol
-nnoremap <leader>fs :cscope find s <cword><CR><C-o>:copen 20<CR>
-" Find definition 
-nnoremap <leader>fg :cscope find g <cword><CR>
 
 " Resizing stuff
 nnoremap <C-Left> :vertical res -1<CR>
@@ -142,9 +124,6 @@ nnoremap <S-h> :tabprevious<Enter>
 nnoremap <S-Right> :tabnext<Enter>
 nnoremap <S-l> :tabnext<Enter>
 
-" Replace all occurrences
-nnoremap <F8> :execute ':%s/' . expand('<cword>') . '/' . input('Replace with: ') . '/g'<CR>
-
 " Jump to the tag matching the text under the cursor
 nnoremap gt :execute ':tj ' . expand('<cword>')<CR>
 
@@ -154,10 +133,6 @@ autocmd BufRead *
       \ exec "set path+=".s:tempPath
 
 autocmd BufRead,BufNewFile *.vs,*.fs set filetype=glsl
-
-" Python stuff
-autocmd FileType python nnoremap <F2> byw:Pydoc <C-r>0<Enter>
-autocmd FileType python nnoremap <F5> :!python %<Enter>
 
 " Tagbar 
 let g:tagbar_left = 1
@@ -183,14 +158,6 @@ vnoremap > >gv
 
 " Disable all vim2hs UTF-8 conceals
 let g:haskell_conceal = 0
-
-" neocomplete
-let g:neocomplete#enable_at_startup = 1
-let g:neocomplete#enable_smart_case = 1
-let g:neocomplete#sources#syntax#min_keyword_length = 3
-" neocomplete keybindings
-inoremap <expr><C-g>     neocomplete#undo_completion()
-inoremap <expr><C-l>     neocomplete#complete_common_string()
 
 " Tab completion for popup menu
 inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
