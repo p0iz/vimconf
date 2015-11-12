@@ -102,7 +102,7 @@ nnoremap <leader>l :lopen 20<CR>
 nnoremap <leader>s :w<CR>
 
 " Toggle Limelight
-nnoremap <leader>L :Limelight!! 0.7<CR>
+nnoremap <leader>L :Limelight!!<CR>
 
 " GoYo (with 120 char lines)
 nnoremap <leader>gy :Goyo 120<CR>
@@ -169,3 +169,5 @@ autocmd BufWritePost ft=python call Flake8()
 " Do not traverse SCM with command-t
 let g:CommandTTraverseSCM = 'pwd'
 
+" Limelight
+let g:limelight_conceal_ctermfg = 240
