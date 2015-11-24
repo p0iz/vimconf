@@ -104,6 +104,10 @@ nnoremap <C-Up> :res -1<CR>
 nnoremap <C-Right> :vertical res +1<CR>
 nnoremap <C-Down> :res +1<CR>
 
+" Delete current buffer
+nnoremap <silent> <C-w>d :bd<CR>
+nnoremap <silent> <C-w><C-d> :bd<CR>
+
 " Jump to start/end of line
 noremap <C-h> ^
 noremap <C-l> $
