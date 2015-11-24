@@ -139,9 +139,6 @@ nnoremap <leader>gb :TagbarToggle<Enter>
 
 " Syntastic
 let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_cpp_compiler_options = '-std=c++11'
-" Next add some common include dirs for Syntastic to search
-let g:syntastic_cpp_include_dirs = ['/usr/include/qt5', '/usr/include/qt5/QtConcurrent', '/usr/include/qt5/QtCore', '/usr/include/qt5/QtDBus', '/usr/include/qt5/QtGui', '/usr/include/qt5/QtNetwork', '/usr/include/qt5/QtOpenGL', '/usr/include/qt5/QtOpenGLExtensions', '/usr/include/qt5/QtPlatformSupport', '/usr/include/qt5/QtPrintSupport', '/usr/include/qt5/QtQml', '/usr/include/qt5/QtQuick', '/usr/include/qt5/QtQuickParticles', '/usr/include/qt5/QtQuickTest', '/usr/include/qt5/QtSql', '/usr/include/qt5/QtTest', '/usr/include/qt5/QtWidgets', '/usr/include/qt5/QtXml', '../include', 'include']
 
 " Switch declaration/header
 noremap <silent> <leader>h <ESC>:A<CR>
