@@ -108,6 +108,21 @@ nnoremap <C-Down> :res +1<CR>
 nnoremap <silent> <C-w>d :bd<CR>
 nnoremap <silent> <C-w><C-d> :bd<CR>
 
+" Delete other buffers
+function! DeleteOtherBuffers()
+  let s:currentBuffer = bufnr('%')
+  if bufnr('1') != s:currentBuffer
+    silent! 1,.-1bdelete
+  endif
+  if bufnr('$') != s:currentBuffer
+    silent! .1,$bdelete
+  endif
+  echomsg "Deleted other buffers"
+endfunction
+command! CloseOthers call DeleteOtherBuffers()
+nnoremap <silent> <C-w>D :CloseOthers<CR>
+nnoremap <silent> <C-w><C-D> :CloseOthers<CR>
+
 " Jump to start/end of line
 noremap <C-h> ^
 noremap <C-l> $
