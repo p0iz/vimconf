@@ -22,6 +22,7 @@ set smartindent
 set smarttab
 set smartcase
 set shiftwidth=2
+set shortmess=a
 set guioptions-=m
 set guioptions-=r
 set guioptions-=l
