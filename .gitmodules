@@ -55,3 +55,6 @@
 [submodule "bundle/xmledit"]
 	path = bundle/xmledit
 	url = https://github.com/sukima/xmledit/
+[submodule "bundle/semantic-highlight.vim"]
+	path = bundle/semantic-highlight.vim
+	url = https://github.com/jaxbot/semantic-highlight.vim.git
