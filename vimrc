@@ -64,7 +64,12 @@ syntax on
 
 set t_Co=256
 set background=dark
-colorscheme gruvbox
+if has("gui_running")
+  colorscheme base16-duotone-dark
+else
+  colorscheme gruvbox
+endif
+
 set fillchars=
 
 " Highlight extra whitespace at the end of a line
