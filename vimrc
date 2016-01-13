@@ -42,6 +42,9 @@ set scrolloff=20
 set cscopequickfix=s-,c-,d-,i-,t-,e-,g-
 set confirm
 
+" Disable all bells
+set vb t_vb=
+
 " Set a better title
 autocmd BufEnter * let &titlestring = $USER . "@" . hostname() . ' [' . expand("%:t") . "]"
 set title
