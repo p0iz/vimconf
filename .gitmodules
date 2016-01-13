@@ -58,3 +58,6 @@
 [submodule "bundle/semantic-highlight.vim"]
 	path = bundle/semantic-highlight.vim
 	url = https://github.com/jaxbot/semantic-highlight.vim.git
+[submodule "bundle/vim-colors_duotones"]
+	path = bundle/vim-colors_duotones
+	url = https://github.com/atelierbram/vim-colors_duotones.git
