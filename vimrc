@@ -6,9 +6,9 @@ call pathogen#helptags()
 
 " set the GUI font to use
 if has("gui_gtk2")
-  set guifont=FantasqueSansMono\ 12
+  set guifont=FantasqueSansMono\ 14
 elseif has("gui_win32")
-  set guifont=Fantasque_Sans_Mono:h12:cANSI
+  set guifont=Fantasque_Sans_Mono:h14:cANSI
 endif
 
 set backspace=indent,eol,start
@@ -28,6 +28,7 @@ set guioptions-=r
 set guioptions-=l
 set guioptions-=T
 set guioptions-=L
+set linespace=2
 
 set number
 set mouse=a
