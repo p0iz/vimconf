@@ -94,6 +94,11 @@ augroup END
 " Make space leader
 let mapleader = " "
 
+" Exit Neovim terminal mode with Esc
+if has('nvim')
+  tnoremap <Esc> <C-\><C-n>
+endif
+
 " Make shift-insert work like in Xterm
 noremap <S-Insert> <MiddleMouse>
 noremap! <S-Insert> <MiddleMouse>
