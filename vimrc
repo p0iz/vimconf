@@ -1,5 +1,7 @@
-" My superb vim configuration
-set nocompatible
+" My superb vim (and neovim) configuration
+if !has('nvim')
+  set nocompatible
+endif
 
 call pathogen#infect()
 call pathogen#helptags()
@@ -62,10 +64,13 @@ set statusline=%1*%t\ %r%h%w%y%q\ [col:%c\ line:%l/%L\ %0P]\ \ \
 filetype plugin on
 syntax on
 
-set t_Co=256
+if !has('nvim')
+  set t_Co=256
+endif
+
 set background=dark
 if has("gui_running")
-  colorscheme base16-duotone-dark
+  colorscheme gruvbox
 else
   colorscheme gruvbox
 endif
