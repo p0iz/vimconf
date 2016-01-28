@@ -170,7 +170,6 @@ let g:netrw_liststyle=3
 nnoremap <F2> :Lexplore 20<CR>
 
 " Tagbar 
-let g:tagbar_left = 1
 let g:tagbar_autofocus = 1
 let g:tagbar_compact = 1
 let g:tagbar_autoclose = 1
