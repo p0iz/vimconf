@@ -150,15 +150,13 @@ nnoremap <silent> <C-w>D :CloseOthers<CR>
 nnoremap <silent> <C-w><C-D> :CloseOthers<CR>
 
 " Jump to start/end of line
-noremap <C-h> ^
-noremap <C-l> $
+nnoremap H ^
+nnoremap L $
 
 " Tab management
-nnoremap <S-t> :tabnew<Enter>
-nnoremap <S-Left> :tabprevious<Enter>
-nnoremap <S-h> :tabprevious<Enter>
-nnoremap <S-Right> :tabnext<Enter>
-nnoremap <S-l> :tabnext<Enter>
+nnoremap <C-t> :tabnew<Enter>
+nnoremap <C-h> :tabprevious<Enter>
+nnoremap <C-l> :tabnext<Enter>
 
 " Jump to the tag matching the text under the cursor
 nnoremap gt :execute ':tj ' . expand('<cword>')<CR>
