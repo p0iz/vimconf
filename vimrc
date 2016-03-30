@@ -108,6 +108,7 @@ let g:ctrlp_map = '<leader>t'
 let g:ctrlp_cmd = 'CtrlPMixed'
 let g:ctrlp_match_window = 'order:ttb,max:20,results:50'
 let g:ctrlp_clear_cache_on_exit = 0
+let g:ctrlp_max_files = 25000
 
 " Open quickfix window
 nnoremap <leader>q :copen 20<CR>
