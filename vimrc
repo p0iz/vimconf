@@ -8,9 +8,9 @@ call pathogen#helptags()
 
 " set the GUI font to use
 if has("gui_gtk2")
-  set guifont=FantasqueSansMono\ 14
+  set guifont=FantasqueSansMono\ 12
 elseif has("gui_win32")
-  set guifont=Fantasque_Sans_Mono:h14:cANSI
+  set guifont=Fantasque_Sans_Mono:h12:cANSI
 endif
 
 set backspace=indent,eol,start
