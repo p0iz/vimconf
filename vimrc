@@ -70,9 +70,9 @@ endif
 
 set background=dark
 if has("gui_running")
-  colorscheme gruvbox
+  colorscheme spacegray
 else
-  colorscheme gruvbox
+  colorscheme spacegray
 endif
 
 set fillchars=
