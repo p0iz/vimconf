@@ -109,6 +109,7 @@ let g:ctrlp_cmd = 'CtrlPMixed'
 let g:ctrlp_match_window = 'order:ttb,max:20,results:50'
 let g:ctrlp_clear_cache_on_exit = 0
 let g:ctrlp_max_files = 25000
+nnoremap <leader>b :CtrlPBuffer<CR>
 
 " Open quickfix window
 nnoremap <leader>q :copen 20<CR>
@@ -208,10 +209,6 @@ inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
 " Flake8
 let g:flake8_show_in_gutter = 1
 autocmd BufWritePost ft=python call Flake8()
-
-" Command-T
-let g:CommandTTraverseSCM = 'pwd'
-nnoremap <silent> <leader>b :CommandTMRU<CR>
 
 " Limelight
 let g:limelight_conceal_ctermfg = 240
