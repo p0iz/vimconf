@@ -69,9 +69,9 @@ endif
 
 set background=dark
 if has("gui_running")
-  colorscheme spacegray
+  colorscheme Base2Tone-Drawbridge-dark
 else
-  colorscheme spacegray
+  colorscheme default
 endif
 
 set fillchars=

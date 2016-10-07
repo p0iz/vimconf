@@ -64,3 +64,9 @@
 [submodule "bundle/vim-gutentags"]
 	path = bundle/vim-gutentags
 	url = https://github.com/ludovicchabant/vim-gutentags
+[submodule "bundle/vim-monokai"]
+	path = bundle/vim-monokai
+	url = https://github.com/crusoexia/vim-monokai.git
+[submodule "bundle/Base2Tone-vim"]
+	path = bundle/Base2Tone-vim
+	url = https://github.com/atelierbram/Base2Tone-vim.git
