@@ -164,6 +164,9 @@ nnoremap <C-l> :tabnext<Enter>
 " Jump to the tag matching the text under the cursor
 nnoremap gt :execute ':tj ' . expand('<cword>')<CR>
 
+" Git grep the word under the cursor in the working dir
+nnoremap gg :execute ':Ggrep ' . expand('<cword>') . ' **'<Cr>
+
 " Add the current file's directory to the path if not already present.
 autocmd BufRead *
       \ let s:tempPath=escape(escape(expand("%:p:h"), ' '), '\ ') |
