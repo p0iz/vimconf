@@ -87,6 +87,7 @@ autocmd Syntax * syn match MixedIndentation /^\t\+ \s*\|^ \+\t\s*/
 " Highlight current line in active buffer
 augroup BgHighlight
   autocmd!
+  autocmd VimEnter * set cul
   autocmd WinEnter * set cul
   autocmd WinLeave * set nocul
 augroup END
