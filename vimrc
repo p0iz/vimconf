@@ -216,3 +216,8 @@ autocmd BufWritePost ft=python call Flake8()
 
 " Limelight
 let g:limelight_conceal_ctermfg = 240
+
+" Allow setting options in projects (and make sure they play nice)
+set exrc
+set secure
+
