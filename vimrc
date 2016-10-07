@@ -34,7 +34,6 @@ set linespace=2
 
 set number
 set mouse=a
-set expandtab
 set updatetime=1000
 set incsearch
 set hidden
