@@ -207,8 +207,9 @@ vnoremap > >gv
 " Disable all vim2hs UTF-8 conceals
 let g:haskell_conceal = 0
 
-" Tab completion for popup menu
-inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
+" Use j/k for navigating popup menu
+inoremap <expr> <C-j> pumvisible() ? "\<C-n>" : "\<C-j>"
+inoremap <expr> <C-k> pumvisible() ? "\<C-p>" : "\<C-k>"
 
 " Flake8
 let g:flake8_show_in_gutter = 1
