@@ -67,3 +67,6 @@
 [submodule "bundle/Base2Tone-vim"]
 	path = bundle/Base2Tone-vim
 	url = https://github.com/atelierbram/Base2Tone-vim.git
+[submodule "bundle/csapprox"]
+	path = bundle/csapprox
+	url = https://github.com/godlygeek/csapprox.git
