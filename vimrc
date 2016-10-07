@@ -164,7 +164,7 @@ nnoremap <C-l> :tabnext<Enter>
 nnoremap gt :execute ':tj ' . expand('<cword>')<CR>
 
 " Git grep the word under the cursor in the working dir
-nnoremap gg :execute ':Ggrep ' . expand('<cword>') . ' **'<Cr>
+nnoremap gg :execute ':Ggrep ' . expand('<cword>') . ' **'<Cr> <silent!>
 
 " Add the current file's directory to the path if not already present.
 autocmd BufRead *
