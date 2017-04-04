@@ -5,3 +5,5 @@ swap/*
 backup/*
 undo/*
 *.pyc
+
+tags
