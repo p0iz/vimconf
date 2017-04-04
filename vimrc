@@ -1,7 +1,5 @@
 " My superb vim (and neovim) configuration
-if !has('nvim')
-  set nocompatible
-endif
+set nocompatible
 
 call pathogen#infect()
 call pathogen#helptags()
@@ -93,11 +91,6 @@ augroup END
 
 " Make space leader
 let mapleader = " "
-
-" Exit Neovim terminal mode with Esc
-if has('nvim')
-  tnoremap <Esc> <C-\><C-n>
-endif
 
 " Make shift-insert work like in Xterm
 noremap <S-Insert> <MiddleMouse>
