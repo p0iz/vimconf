@@ -181,14 +181,6 @@ nnoremap <F3> :TagbarToggle<Enter>
 " Semantic highlighting
 nnoremap <leader>S :SemanticHighlightToggle<CR>
 
-" Syntastic
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
-let g:syntastic_cpp_remove_include_errors = 1
-let g:syntastic_cpp_check_header = 1
-
 " Switch declaration/header
 noremap <silent> <leader>h <ESC>:A<CR>
 noremap <silent> <F4> <ESC>:A<CR>
