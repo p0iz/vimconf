@@ -120,9 +120,6 @@ nnoremap <leader>l :lopen 20<CR>
 " Save 
 nnoremap <leader>s :w<CR>
 
-" Toggle Limelight
-nnoremap <leader>L :Limelight!!<CR>
-
 " GoYo (with 120 char lines)
 nnoremap <leader>gy :Goyo 120<CR>
 
@@ -214,8 +211,6 @@ inoremap <expr> <C-k> pumvisible() ? "\<C-p>" : "\<C-k>"
 let g:flake8_show_in_gutter = 1
 autocmd BufWritePost ft=python call Flake8()
 
-" Limelight
-let g:limelight_conceal_ctermfg = 240
 
 " Allow setting options in projects (and make sure they play nice)
 set exrc
