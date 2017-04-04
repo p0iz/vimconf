@@ -193,7 +193,5 @@ autocmd BufWritePost ft=python call Flake8()
 " Alternate
 let g:alternateSearchPath = 'sfr:../source,sfr:../src,sfr:../include,sfr:../inc,sfr:../Public,sfr:../Private'
 
-" Allow setting options in projects (and make sure they play nice)
-set exrc
-set secure
-
+" Local vimrc config
+let g:localvimrc_persistent = 2
