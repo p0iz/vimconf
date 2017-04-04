@@ -58,7 +58,7 @@ set undodir=~/.vim/undo//
 " Custom statusline
 set laststatus=2
 set statusline=%1*%t\ %r%h%w%y%q\ [col:%c\ line:%l/%L\ %0P]\ \ \
-\ %(%m\%m\%m\%)%=[ASCII:\ %02B][%{strftime(\"%H:%M:%S\")}]%{SyntasticStatuslineFlag()}%*
+\ %(%m\%m\%m\%)%=[ASCII:\ %02B][%{strftime(\"%H:%M:%S\")}]*
 
 filetype plugin on
 syntax on
