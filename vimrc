@@ -208,6 +208,8 @@ inoremap <expr> <C-k> pumvisible() ? "\<C-p>" : "\<C-k>"
 let g:flake8_show_in_gutter = 1
 autocmd BufWritePost ft=python call Flake8()
 
+" Alternate
+let g:alternateSearchPath = 'sfr:../source,sfr:../src,sfr:../include,sfr:../inc,sfr:../Public,sfr:../Private'
 
 " Allow setting options in projects (and make sure they play nice)
 set exrc
