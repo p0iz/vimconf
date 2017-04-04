@@ -58,9 +58,6 @@
 [submodule "bundle/csapprox"]
 	path = bundle/csapprox
 	url = https://github.com/godlygeek/csapprox.git
-[submodule "bundle/neomake"]
-	path = bundle/neomake
-	url = https://github.com/neomake/neomake.git
-[submodule "bundle/neomake-autolint"]
-	path = bundle/neomake-autolint
-	url = https://github.com/dojoteef/neomake-autolint
+[submodule "bundle/ale"]
+	path = bundle/ale
+	url = https://github.com/w0rp/ale.git
