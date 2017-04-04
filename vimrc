@@ -69,7 +69,7 @@ endif
 
 set background=dark
 if has("gui_running")
-  colorscheme Base2Tone-Drawbridge-dark
+  colorscheme Base2Tone_DrawbridgeDark
 else
   colorscheme default
 endif
