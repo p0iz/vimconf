@@ -120,9 +120,6 @@ nnoremap <leader>l :lopen 20<CR>
 " Save 
 nnoremap <leader>s :w<CR>
 
-" GoYo (with 120 char lines)
-nnoremap <leader>gy :Goyo 120<CR>
-
 " Resizing stuff
 nnoremap <C-Left> :vertical res -1<CR>
 nnoremap <C-Up> :res -1<CR>
