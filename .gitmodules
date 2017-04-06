@@ -70,3 +70,6 @@
 [submodule "bundle/semantic-highlight"]
 	path = bundle/semantic-highlight
 	url = https://github.com/jaxbot/semantic-highlight.vim.git
+[submodule "bundle/vim-cpp-enhanced-highlight"]
+	path = bundle/vim-cpp-enhanced-highlight
+	url = https://github.com/octol/vim-cpp-enhanced-highlight.git
