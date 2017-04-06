@@ -96,14 +96,6 @@ let mapleader = " "
 noremap <S-Insert> <MiddleMouse>
 noremap! <S-Insert> <MiddleMouse>
 
-" Ctrl-P
-let g:ctrlp_map = '<leader>t'
-let g:ctrlp_cmd = 'CtrlPMixed'
-let g:ctrlp_match_window = 'order:ttb,max:20,results:50'
-let g:ctrlp_clear_cache_on_exit = 0
-let g:ctrlp_max_files = 25000
-nnoremap <leader>b :CtrlPBuffer<CR>
-
 " Open quickfix window
 nnoremap <leader>q :copen 20<CR>
 
@@ -195,3 +187,19 @@ let g:alternateSearchPath = 'sfr:../source,sfr:../src,sfr:../include,sfr:../inc,
 
 " Local vimrc config
 let g:localvimrc_persistent = 2
+
+" Denite
+nnoremap <leader>t :Denite file_rec<CR>
+nnoremap <leader>b :Denite buffer<CR>
+call denite#custom#map(
+  \ 'insert',
+  \ '<C-j>',
+  \ '<denite:move_to_next_line>',
+  \ 'noremap'
+  \)
+call denite#custom#map(
+  \ 'insert',
+  \ '<C-k>',
+  \ '<denite:move_to_previous_line>',
+  \ 'noremap'
+  \)
