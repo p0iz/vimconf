@@ -67,3 +67,6 @@
 [submodule "bundle/denite"]
 	path = bundle/denite
 	url = https://github.com/Shougo/denite.nvim.git
+[submodule "bundle/semantic-highlight"]
+	path = bundle/semantic-highlight
+	url = https://github.com/jaxbot/semantic-highlight.vim.git

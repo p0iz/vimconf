@@ -203,3 +203,4 @@ call denite#custom#map(
   \ '<denite:move_to_previous_line>',
   \ 'noremap'
   \)
+
