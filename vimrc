@@ -138,6 +138,8 @@ nnoremap L $
 nnoremap <C-t> :tabnew<Enter>
 nnoremap <C-h> :tabprevious<Enter>
 nnoremap <C-l> :tabnext<Enter>
+nnoremap <M-h> :-tabmove<Enter>
+nnoremap <M-l> :tabmove<Enter>
 
 " Jump to the tag matching the text under the cursor
 nnoremap gt :execute ':tj ' . expand('<cword>')<CR>
