@@ -152,6 +152,7 @@ autocmd BufRead *
 autocmd BufRead,BufNewFile *.vs,*.fs set filetype=glsl
 
 " netrw
+let g:netrw_banner=0
 let g:netrw_winsize='-28'
 let g:netrw_liststyle=3
 nnoremap <F2> :Lexplore 20<CR>
