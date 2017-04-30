@@ -28,6 +28,7 @@ set guioptions-=r
 set guioptions-=l
 set guioptions-=T
 set guioptions-=L
+set sessionoptions+=winpos,resize
 set linespace=2
 
 set number
@@ -94,10 +95,10 @@ augroup END
 " NOTE: source vimrc after changes, or risk
 "       saving old stuff into session file!
 "
-augroup KeepSession
+augroup VimStateManagement
   autocmd!
-  autocmd VimEnter * source ~/.vim_last_session
   autocmd VimLeave * mksession! ~/.vim_last_session
+  autocmd VimEnter * source ~/.vim_last_session
 augroup END
 
 " Make space leader
