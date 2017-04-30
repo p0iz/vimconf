@@ -89,6 +89,17 @@ augroup BgHighlight
   autocmd WinLeave * set nocul
 augroup END
 
+" Save the current session when quitting Vim
+"
+" NOTE: source vimrc after changes, or risk
+"       saving old stuff into session file!
+"
+augroup KeepSession
+  autocmd!
+  autocmd VimEnter * source ~/.vim_last_session
+  autocmd VimLeave * mksession! ~/.vim_last_session
+augroup END
+
 " Make space leader
 let mapleader = " "
 
