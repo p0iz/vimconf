@@ -95,10 +95,15 @@ augroup END
 " NOTE: source vimrc after changes, or risk
 "       saving old stuff into session file!
 "
+function! LoadSession()
+  if filereadable(expand("~/.vim_last_session"))
+    source ~/.vim_last_session
+  endif
+endfunction
 augroup VimStateManagement
   autocmd!
-  autocmd VimLeave * mksession! ~/.vim_last_session
-  autocmd VimEnter * source ~/.vim_last_session
+  autocmd VimLeavePre * mksession! ~/.vim_last_session
+  autocmd VimEnter * call LoadSession()
 augroup END
 
 " Make space leader
