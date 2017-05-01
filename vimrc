@@ -206,5 +206,7 @@ let g:alternateSearchPath = 'sfr:../source,sfr:../src,sfr:../include,sfr:../inc,
 let g:localvimrc_persistent = 2
 
 " CtrlP
-nnoremap <leader>t :CtrlP<CR>
-nnoremap <leader>b :CtrlPBuf<CR>
+let g:ctrlp_match_func = { 'match': 'pymatcher#PyMatch' }
+let g:ctrlp_max_files = 0
+nnoremap <leader>t :CtrlPMixed<CR>
+nnoremap <leader>b :CtrlPBuffer<CR>
