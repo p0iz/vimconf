@@ -200,19 +200,6 @@ let g:alternateSearchPath = 'sfr:../source,sfr:../src,sfr:../include,sfr:../inc,
 " Local vimrc config
 let g:localvimrc_persistent = 2
 
-" Denite
-nnoremap <leader>t :Denite file_rec<CR>
-nnoremap <leader>b :Denite buffer<CR>
-call denite#custom#map(
-  \ 'insert',
-  \ '<C-j>',
-  \ '<denite:move_to_next_line>',
-  \ 'noremap'
-  \)
-call denite#custom#map(
-  \ 'insert',
-  \ '<C-k>',
-  \ '<denite:move_to_previous_line>',
-  \ 'noremap'
-  \)
-
+" CtrlP
+nnoremap <leader>t :CtrlP<CR>
+nnoremap <leader>b :CtrlPBuf<CR>
