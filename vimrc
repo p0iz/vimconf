@@ -42,6 +42,10 @@ set scrolloff=20
 set cscopequickfix=s-,c-,d-,i-,t-,e-,g-
 set confirm
 
+" Enable syntax folding and initially unfold everything
+set foldmethod=syntax
+set foldlevel=100
+
 " Disable all bells
 set vb t_vb=
 
