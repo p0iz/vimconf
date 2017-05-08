@@ -101,7 +101,9 @@ augroup END
 "
 function! LoadSession()
   if filereadable(expand("~/.vim_last_session"))
-    source ~/.vim_last_session
+    silent! source ~/.vim_last_session
+    brewind
+    silent! redraw
   endif
 endfunction
 augroup VimStateManagement
