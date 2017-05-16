@@ -37,7 +37,7 @@ set updatetime=1000
 set incsearch
 set hidden
 set wildmenu
-set wildmode=full
+set wildmode=list:longest
 set scrolloff=10
 set cscopequickfix=s-,c-,d-,i-,t-,e-,g-
 set confirm
@@ -72,7 +72,7 @@ endif
 
 set background=dark
 if has("gui_running")
-  colorscheme Base2Tone_EveningDark
+  colorscheme Base2Tone_EarthDark
 else
   colorscheme default
 endif
