@@ -216,5 +216,5 @@ let g:localvimrc_persistent = 2
 let g:ctrlp_match_func = { 'match': 'pymatcher#PyMatch' }
 let g:ctrlp_max_files = 0
 let g:ctrlp_match_window = 'bottom,ttb,min:1,max:20,results:1000'
-nnoremap <leader>t :CtrlPMixed<CR>
+nnoremap <leader>t :CtrlPCurWD<CR>
 nnoremap <leader>b :CtrlPBuffer<CR>
