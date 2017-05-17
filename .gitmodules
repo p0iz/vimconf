@@ -76,3 +76,6 @@
 [submodule "bundle/ctrlp-py-matcher"]
 	path = bundle/ctrlp-py-matcher
 	url = https://github.com/FelikZ/ctrlp-py-matcher
+[submodule "bundle/vim-go"]
+	path = bundle/vim-go
+	url = https://github.com/fatih/vim-go.git
