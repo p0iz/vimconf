@@ -41,6 +41,7 @@ set wildmode=list:longest
 set scrolloff=10
 set cscopequickfix=s-,c-,d-,i-,t-,e-,g-
 set confirm
+set nrformats+=alpha
 
 " Enable syntax folding and initially unfold everything
 set foldmethod=syntax
