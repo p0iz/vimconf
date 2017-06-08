@@ -28,7 +28,7 @@ set guioptions-=r
 set guioptions-=l
 set guioptions-=T
 set guioptions-=L
-set sessionoptions+=winpos,resize
+set sessionoptions=curdir,help,winpos,resize
 set linespace=2
 
 set number
