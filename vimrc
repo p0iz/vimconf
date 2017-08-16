@@ -51,7 +51,7 @@ set foldlevel=100
 set vb t_vb=
 
 " Set a better title
-autocmd BufEnter * let &titlestring = $USER . "@" . hostname() . ' [' . expand("%:t") . "]"
+autocmd BufEnter * let &titlestring = $USERNAME . "@" . hostname() . ' [' . expand("%:t") . "]"
 set title
 
 " Backup, swap and undo
