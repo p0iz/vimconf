@@ -73,7 +73,7 @@ endif
 
 set background=dark
 if has("gui_running")
-  colorscheme Base2Tone_EarthDark
+  colorscheme Base2Tone_SeaDark
 else
   colorscheme default
 endif
