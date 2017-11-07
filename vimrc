@@ -57,6 +57,8 @@ set nobackup
 set noswapfile
 set undodir=~/.vim/undo//
 
+" Make the OS clipboard default
+set clipboard=unnamed
 
 " Custom statusline
 set laststatus=2
