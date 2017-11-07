@@ -3,9 +3,9 @@ set nocompatible
 
 " set the GUI font to use
 if has("gui_gtk2")
-  set guifont=FiraCodeMedium\ 10
+  set guifont=FiraCode\ 11
 elseif has("gui_win32")
-  set guifont=Fira_Code_Medium:h10:cANSI
+  set guifont=Fira_Code:h11:cANSI:qDRAFT
 endif
 
 set backspace=indent,eol,start
