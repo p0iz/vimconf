@@ -1,9 +1,6 @@
 " My superb vim (and neovim) configuration
 set nocompatible
 
-call pathogen#infect()
-call pathogen#helptags()
-
 " set the GUI font to use
 if has("gui_gtk2")
   set guifont=FiraCodeMedium\ 10
@@ -175,9 +172,6 @@ autocmd BufRead *
 
 autocmd BufRead,BufNewFile *.vs,*.fs set filetype=glsl
 
-" NERDTree
-nnoremap <silent> <F2> :NERDTreeToggle<CR>
-
 " Tagbar 
 let g:tagbar_autofocus = 1
 let g:tagbar_compact = 1
@@ -187,16 +181,14 @@ nnoremap <F3> :TagbarToggle<Enter>
 " Semantic highlighting
 nnoremap <leader>S :SemanticHighlightToggle<CR>
 
-" Switch declaration/header
-noremap <silent> <leader>h <ESC>:A<CR>
-noremap <silent> <F4> <ESC>:A<CR>
+" Alternate
+nnoremap <silent> <leader>h <ESC>:A<CR>
+nnoremap <silent> <F4> <ESC>:A<CR>
+let g:alternateSearchPath = 'sfr:../source,sfr:../src,sfr:../include,sfr:../inc,sfr:../Public,sfr:../Private'
 
 " Reselect visual selection after reindent
 vnoremap < <gv
 vnoremap > >gv
-
-" Disable all vim2hs UTF-8 conceals
-let g:haskell_conceal = 0
 
 " Use j/k for navigating popup menu
 inoremap <expr> <C-j> pumvisible() ? "\<C-n>" : "\<C-j>"
@@ -206,15 +198,6 @@ inoremap <expr> <C-k> pumvisible() ? "\<C-p>" : "\<C-k>"
 let g:flake8_show_in_gutter = 1
 autocmd BufWritePost ft=python call Flake8()
 
-" Alternate
-let g:alternateSearchPath = 'sfr:../source,sfr:../src,sfr:../include,sfr:../inc,sfr:../Public,sfr:../Private'
-
-" Local vimrc config
+" Always persist local vimrc config
 let g:localvimrc_persistent = 2
 
-" CtrlP
-let g:ctrlp_match_func = { 'match': 'pymatcher#PyMatch' }
-let g:ctrlp_max_files = 0
-let g:ctrlp_match_window = 'bottom,ttb,min:1,max:20,results:1000'
-nnoremap <leader>t :CtrlPCurWD<CR>
-nnoremap <leader>b :CtrlPBuffer<CR>
