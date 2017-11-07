@@ -1,4 +1,4 @@
-" My superb vim (and neovim) configuration
+" My superb vim configuration
 set nocompatible
 
 " set the GUI font to use
@@ -46,6 +46,8 @@ set foldlevel=100
 
 " Disable all bells
 set vb t_vb=
+" Ensure maximum color fidelity on terminals
+set t_Co=256
 
 " Set a better title
 autocmd BufEnter * let &titlestring = $USERNAME . "@" . hostname() . ' [' . expand("%:t") . "]"
@@ -56,6 +58,7 @@ set nobackup
 set noswapfile
 set undodir=~/.vim/undo//
 
+
 " Custom statusline
 set laststatus=2
 set statusline=%1*%t\ %r%h%w%y%q\ [col:%c\ line:%l/%L\ %0P]\ \ \
@@ -63,10 +66,6 @@ set statusline=%1*%t\ %r%h%w%y%q\ [col:%c\ line:%l/%L\ %0P]\ \ \
 
 filetype plugin on
 syntax on
-
-if !has('nvim')
-  set t_Co=256
-endif
 
 set background=dark
 if has("gui_running")
