@@ -1,16 +1,12 @@
 " My superb vim configuration
-set nocompatible
-filetype plugin on
-syntax on
 
-" set the GUI font to use
-if has("gui_gtk2")
-  set guifont=FiraCode\ 11
-elseif has("gui_win32")
-  set guifont=Fira_Code:h11:cANSI:qDRAFT
-endif
+" Source configuration scripts
+runtime! config/*.vim
 
 " Interface
+filetype plugin on
+syntax on
+set nocompatible
 set backspace=indent,eol,start
 set autoread
 set cmdheight=1
@@ -50,6 +46,12 @@ set foldlevel=100
 " GUI/Terminal settings
 if has('gui_running')
   colorscheme Base2Tone_SpaceLight
+  " set the GUI font to use
+  if has("gui_gtk2")
+    set guifont=FiraCode\ 11
+  elseif has("gui_win32")
+    set guifont=Fira_Code:h11:cANSI:qDRAFT
+  endif
 else
   set t_vb=
   set t_Co=256
