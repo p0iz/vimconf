@@ -1,5 +1,7 @@
 " My superb vim configuration
 set nocompatible
+filetype plugin on
+syntax on
 
 " set the GUI font to use
 if has("gui_gtk2")
@@ -8,17 +10,11 @@ elseif has("gui_win32")
   set guifont=Fira_Code:h11:cANSI:qDRAFT
 endif
 
+" Interface
 set backspace=indent,eol,start
+set autoread
 set cmdheight=1
 set mousehide		" Hide the mouse when typing text
-set autoindent
-set autoread
-set tabstop=2
-set expandtab
-set smartindent
-set smarttab
-set smartcase
-set shiftwidth=2
 set shortmess=a
 set guioptions-=m
 set guioptions-=r
@@ -26,27 +22,39 @@ set guioptions-=l
 set guioptions-=T
 set guioptions-=L
 set linespace=2
-
 set number
 set mouse=a
 set updatetime=1000
-set incsearch
 set hidden
 set wildmenu
 set wildmode=list:longest
 set scrolloff=10
-set cscopequickfix=s-,c-,d-,i-,t-,e-,g-
 set confirm
-set nrformats+=alpha
-
+set nrformats+=alpha " Allow C-A and C-X to increment chars
+set novisualbell
+set fillchars=
+" Indentation
+set autoindent
+set tabstop=2
+set shiftwidth=2
+set expandtab
+set smartindent
+set smarttab
+" Search
+set smartcase
+set incsearch
+set cscopequickfix=s-,c-,d-,i-,t-,e-,g-
 " Enable syntax folding and initially unfold everything
 set foldmethod=syntax
 set foldlevel=100
-
-" Disable all bells
-set vb t_vb=
-" Ensure maximum color fidelity on terminals
-set t_Co=256
+" GUI/Terminal settings
+if has('gui_running')
+  colorscheme Base2Tone_SpaceLight
+else
+  set t_vb=
+  set t_Co=256
+  colorscheme default
+endif
 
 " Set a better title
 autocmd BufEnter * let &titlestring = $USERNAME . "@" . hostname() . ' [' . expand("%:t") . "]"
@@ -65,25 +73,12 @@ set laststatus=2
 set statusline=%1*%t\ %r%h%w%y%q\ [col:%c\ line:%l/%L\ %0P]\ \ \
 \ %(%m\%m\%m\%)%=[ASCII:\ %02B][%{strftime(\"%H:%M:%S\")}]
 
-filetype plugin on
-syntax on
-
-set background=dark
-if has("gui_running")
-  colorscheme Base2Tone_SeaDark
-else
-  colorscheme default
-endif
-
-set fillchars=
 
 " Highlight extra whitespace at the end of a line
 highlight ExtraWhitespace ctermbg=red guibg=red
 autocmd Syntax * syn match ExtraWhitespace /\s\+$/
-
 highlight MixedIndentation ctermbg=darkgreen guibg=lightgreen
 autocmd Syntax * syn match MixedIndentation /^\t\+ \s*\|^ \+\t\s*/
-
 " Highlight current line in active buffer
 augroup BgHighlight
   autocmd!
@@ -91,6 +86,8 @@ augroup BgHighlight
   autocmd WinEnter * set cul
   autocmd WinLeave * set nocul
 augroup END
+
+" *** Key mappings ***
 
 " Make space leader
 let mapleader = " "
