@@ -4,6 +4,7 @@
 runtime! config/*.vim
 
 " Interface
+set encoding=utf8
 filetype plugin on
 syntax on
 set nocompatible
@@ -70,12 +71,6 @@ set undodir=~/.vim/undo//
 " Make the OS clipboard default
 set clipboard=unnamed
 
-" Custom statusline
-set laststatus=2
-set statusline=%1*%t\ %r%h%w%y%q\ [col:%c\ line:%l/%L\ %0P]\ \ \
-\ %(%m\%m\%m\%)%=[ASCII:\ %02B][%{strftime(\"%H:%M:%S\")}]
-
-
 " Highlight extra whitespace at the end of a line
 highlight ExtraWhitespace ctermbg=red guibg=red
 autocmd Syntax * syn match ExtraWhitespace /\s\+$/
@@ -88,6 +83,17 @@ augroup BgHighlight
   autocmd WinEnter * set cul
   autocmd WinLeave * set nocul
 augroup END
+
+" Flake8
+let g:flake8_show_in_gutter = 1
+autocmd BufWritePost ft=python call Flake8()
+
+" Always persist local vimrc config
+let g:localvimrc_persistent = 2
+
+" Airline config
+let g:airline_powerline_fonts = 1
+let g:airline_theme = 'powerlineish'
 
 " *** Key mappings ***
 
@@ -104,7 +110,7 @@ nnoremap <leader>q :copen 20<CR>
 " Open location list
 nnoremap <leader>l :lopen 20<CR>
 
-" Save 
+" Save
 nnoremap <leader>s :w<CR>
 
 " Resizing stuff
@@ -153,7 +159,7 @@ autocmd BufRead *
 
 autocmd BufRead,BufNewFile *.vs,*.fs set filetype=glsl
 
-" Tagbar 
+" Tagbar
 let g:tagbar_autofocus = 1
 let g:tagbar_compact = 1
 let g:tagbar_autoclose = 1
@@ -174,11 +180,4 @@ vnoremap > >gv
 " Use j/k for navigating popup menu
 inoremap <expr> <C-j> pumvisible() ? "\<C-n>" : "\<C-j>"
 inoremap <expr> <C-k> pumvisible() ? "\<C-p>" : "\<C-k>"
-
-" Flake8
-let g:flake8_show_in_gutter = 1
-autocmd BufWritePost ft=python call Flake8()
-
-" Always persist local vimrc config
-let g:localvimrc_persistent = 2
 
