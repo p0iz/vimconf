@@ -25,7 +25,6 @@ set guioptions-=r
 set guioptions-=l
 set guioptions-=T
 set guioptions-=L
-set sessionoptions=curdir,help,winpos,resize
 set linespace=2
 
 set number
@@ -89,24 +88,6 @@ augroup BgHighlight
   autocmd VimEnter * set cul
   autocmd WinEnter * set cul
   autocmd WinLeave * set nocul
-augroup END
-
-" Save the current session when quitting Vim
-"
-" NOTE: source vimrc after changes, or risk
-"       saving old stuff into session file!
-"
-function! LoadSession()
-  if filereadable(expand("~/.vim_last_session"))
-    silent! source ~/.vim_last_session
-    brewind
-    silent! redraw
-  endif
-endfunction
-augroup VimStateManagement
-  autocmd!
-  autocmd VimLeavePre * mksession! ~/.vim_last_session
-  autocmd VimEnter * call LoadSession()
 augroup END
 
 " Make space leader
