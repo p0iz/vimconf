@@ -46,7 +46,7 @@ set foldmethod=syntax
 set foldlevel=100
 " GUI/Terminal settings
 if has('gui_running')
-  colorscheme Base2Tone_SpaceLight
+  colorscheme Base2Tone_SpaceDark
   " set the GUI font to use
   if has("gui_gtk2")
     set guifont=FiraCode\ 11
@@ -93,7 +93,7 @@ let g:localvimrc_persistent = 2
 
 " Airline config
 let g:airline_powerline_fonts = 1
-let g:airline_theme = 'powerlineish'
+let g:airline_theme = 'Base2Tone_SpaceDark'
 
 " *** Key mappings ***
 
