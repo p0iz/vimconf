@@ -46,6 +46,8 @@ set foldmethod=syntax
 set foldlevel=100
 " GUI/Terminal settings
 if has('gui_running')
+  set lines=40
+  set columns=180
   colorscheme Base2Tone_SpaceDark
   " set the GUI font to use
   if has("gui_gtk2")
