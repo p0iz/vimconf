@@ -70,9 +70,6 @@ set nobackup
 set noswapfile
 set undodir=~/.vim/undo//
 
-" Make the OS clipboard default
-set clipboard=unnamed
-
 " Highlight extra whitespace at the end of a line
 highlight ExtraWhitespace ctermbg=red guibg=red
 autocmd Syntax * syn match ExtraWhitespace /\s\+$/
