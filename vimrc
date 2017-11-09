@@ -86,6 +86,9 @@ augroup BgHighlight
   autocmd WinLeave * set nocul
 augroup END
 
+” Use ripgrep for grepping
+set grepprg=rg\ --vimgrep
+
 " Flake8
 let g:flake8_show_in_gutter = 1
 autocmd BufWritePost ft=python call Flake8()
