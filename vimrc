@@ -55,6 +55,8 @@ if has('gui_running')
   elseif has("gui_win32")
     set guifont=Fira_Code:h11:cANSI:qDRAFT
   endif
+  set lines=40
+  set columns=120
 else
   set t_vb=
   set t_Co=256
