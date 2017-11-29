@@ -57,6 +57,8 @@ if has('gui_running')
   endif
   set lines=40
   set columns=120
+  " GUI Airline
+  let g:airline_theme='Base2Tone_SpaceDark'
 else
   set t_vb=
   set t_Co=256
@@ -97,7 +99,6 @@ let g:localvimrc_persistent = 2
 
 " Airline config
 let g:airline_powerline_fonts = 1
-let g:airline_theme = 'Base2Tone_SpaceDark'
 
 " *** Key mappings ***
 
