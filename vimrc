@@ -87,7 +87,7 @@ augroup BgHighlight
   autocmd WinLeave * set nocul
 augroup END
 
-” Use ripgrep for grepping
+" Use ripgrep for grepping
 set grepprg=rg\ --vimgrep
 
 " Flake8
