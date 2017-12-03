@@ -186,3 +186,7 @@ vnoremap > >gv
 inoremap <expr> <C-j> pumvisible() ? "\<C-n>" : "\<C-j>"
 inoremap <expr> <C-k> pumvisible() ? "\<C-p>" : "\<C-k>"
 
+" FZF
+nnoremap <leader>f :Files<CR>
+nnoremap <leader>b :Buffers<CR>
+
