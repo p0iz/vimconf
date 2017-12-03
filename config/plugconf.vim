@@ -14,5 +14,6 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'majutsushi/tagbar'
 Plug 'spolu/dwm.vim'
+Plug 'airblade/vim-gitgutter'
 
 call plug#end()
