@@ -29,6 +29,7 @@ set scrolloff=10
 set confirm
 set nrformats+=alpha " Allow C-A and C-X to increment chars
 set novisualbell
+set belloff=all
 set fillchars=
 " Indentation
 set autoindent
