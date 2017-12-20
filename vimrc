@@ -186,6 +186,7 @@ vnoremap > >gv
 " Use j/k for navigating popup menu
 inoremap <expr> <C-j> pumvisible() ? "\<C-n>" : "\<C-j>"
 inoremap <expr> <C-k> pumvisible() ? "\<C-p>" : "\<C-k>"
+inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<cr>"
 
 " FZF
 nnoremap <leader>f :Files<CR>
