@@ -164,6 +164,15 @@ autocmd BufRead *
       \ let s:tempPath=escape(escape(expand("%:p:h"), ' '), '\ ') |
       \ exec "set path+=".s:tempPath
 
+" Reselect visual selection after reindent
+vnoremap < <gv
+vnoremap > >gv
+
+" Use j/k for navigating popup menu
+inoremap <expr> <C-j> pumvisible() ? "\<C-n>" : "\<C-j>"
+inoremap <expr> <C-k> pumvisible() ? "\<C-p>" : "\<C-k>"
+inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<cr>"
+
 autocmd BufRead,BufNewFile *.vs,*.fs set filetype=glsl
 
 " Tagbar
@@ -179,15 +188,6 @@ nnoremap <leader>S :SemanticHighlightToggle<CR>
 nnoremap <silent> <leader>h <ESC>:A<CR>
 nnoremap <silent> <F4> <ESC>:A<CR>
 let g:alternateSearchPath = 'sfr:../source,sfr:../src,sfr:../include,sfr:../inc,sfr:../Public,sfr:../Private'
-
-" Reselect visual selection after reindent
-vnoremap < <gv
-vnoremap > >gv
-
-" Use j/k for navigating popup menu
-inoremap <expr> <C-j> pumvisible() ? "\<C-n>" : "\<C-j>"
-inoremap <expr> <C-k> pumvisible() ? "\<C-p>" : "\<C-k>"
-inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<cr>"
 
 " FZF
 nnoremap <leader>f :Files<CR>
