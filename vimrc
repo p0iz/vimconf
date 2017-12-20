@@ -192,3 +192,6 @@ inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<cr>"
 nnoremap <leader>f :Files<CR>
 nnoremap <leader>b :Buffers<CR>
 
+" Asyncomplete
+let g:asyncomplete_remove_duplicates = 1
+
