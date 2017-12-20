@@ -18,7 +18,7 @@ set guioptions-=r
 set guioptions-=l
 set guioptions-=T
 set guioptions-=L
-set linespace=2
+set linespace=0
 set number
 set mouse=a
 set updatetime=1000
