@@ -120,8 +120,8 @@ nnoremap <leader>q :copen 20<CR>
 nnoremap <leader>l :lopen 20<CR>
 
 " Save
-nnoremap <leader>s :w<CR>
-nnoremap <leader>S :wa<CR>
+nnoremap <silent> <leader>s :w<CR>
+nnoremap <silent> <leader>S :wa<CR>
 
 " Resizing stuff
 nnoremap <C-Left> :vertical res -1<CR>
