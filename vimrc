@@ -187,14 +187,6 @@ let g:tagbar_compact = 1
 let g:tagbar_autoclose = 1
 nnoremap <F3> :TagbarToggle<Enter>
 
-" Semantic highlighting
-nnoremap <leader>S :SemanticHighlightToggle<CR>
-
-" Alternate
-nnoremap <silent> <leader>h <ESC>:A<CR>
-nnoremap <silent> <F4> <ESC>:A<CR>
-let g:alternateSearchPath = 'sfr:../source,sfr:../src,sfr:../include,sfr:../inc,sfr:../Public,sfr:../Private'
-
 " FZF
 nnoremap <leader>f :Files<CR>
 nnoremap <leader>b :Buffers<CR>
