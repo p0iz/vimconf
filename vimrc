@@ -106,6 +106,9 @@ let g:airline_powerline_fonts = 1
 " Make space leader
 let mapleader = " "
 
+" Ex commands without shift
+nnoremap ö :
+
 " Make shift-insert work like in Xterm
 noremap <S-Insert> <MiddleMouse>
 noremap! <S-Insert> <MiddleMouse>
