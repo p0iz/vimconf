@@ -31,6 +31,7 @@ set nrformats+=alpha " Allow C-A and C-X to increment chars
 set novisualbell
 set belloff=all
 set fillchars=
+set formatoptions+=j
 " Indentation
 set autoindent
 set tabstop=2
