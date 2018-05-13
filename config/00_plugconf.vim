@@ -22,5 +22,6 @@ Plug 'prabirshrestha/asyncomplete-buffer.vim'
 Plug 'tpope/vim-surround'
 Plug 'easymotion/vim-easymotion'
 Plug 'roman/golden-ratio'
+Plug 'Shougo/denite.nvim'
 
 call plug#end()

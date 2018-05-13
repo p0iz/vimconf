@@ -188,6 +188,25 @@ let g:tagbar_compact = 1
 let g:tagbar_autoclose = 1
 nnoremap <F3> :TagbarToggle<Enter>
 
+" Denite
+call denite#custom#option('default', {
+        \ 'prompt': '>'
+        \ })
+
+call denite#custom#var('file_rec', 'command',
+          \ ['rg', '--files', '--glob', '!.git', ''])
+call denite#custom#var('grep', 'command', ['rg'])
+call denite#custom#var('grep', 'default_opts',
+              \ ['--hidden', '--vimgrep', '--no-heading', '-S'])
+call denite#custom#var('grep', 'recursive_opts', [])
+call denite#custom#var('grep', 'pattern_opt', ['--regexp'])
+call denite#custom#var('grep', 'separator', ['--'])
+call denite#custom#var('grep', 'final_opts', [])
+
+nnoremap <leader>f :<C-u>Denite file_rec<CR>
+nnoremap <leader>b :<C-u>Denite buffer<CR>
+nnoremap <leader>r :<C-u>DeniteCursorWord grep:. -mode=normal<CR>
+
 " Asyncomplete
 let g:asyncomplete_remove_duplicates = 1
 
