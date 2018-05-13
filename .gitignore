@@ -7,4 +7,7 @@ undo/*
 *.pyc
 plugged/*
 
+# Add machine-specific config in this untracked file
+config/local.vim
+
 tags
