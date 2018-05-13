@@ -188,10 +188,6 @@ let g:tagbar_compact = 1
 let g:tagbar_autoclose = 1
 nnoremap <F3> :TagbarToggle<Enter>
 
-" FZF
-nnoremap <leader>f :Files<CR>
-nnoremap <leader>b :Buffers<CR>
-
 " Asyncomplete
 let g:asyncomplete_remove_duplicates = 1
 
