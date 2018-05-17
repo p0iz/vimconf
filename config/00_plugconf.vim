@@ -17,11 +17,13 @@ Plug 'prabirshrestha/async.vim'
 Plug 'prabirshrestha/vim-lsp'
 Plug 'prabirshrestha/asyncomplete.vim'
 Plug 'prabirshrestha/asyncomplete-lsp.vim'
+Plug 'prabirshrestha/asyncomplete-omni.vim'
 Plug 'prabirshrestha/asyncomplete-tags.vim'
 Plug 'prabirshrestha/asyncomplete-buffer.vim'
 Plug 'tpope/vim-surround'
 Plug 'easymotion/vim-easymotion'
 Plug 'roman/golden-ratio'
 Plug 'Shougo/denite.nvim'
+Plug 'OmniSharp/omnisharp-vim'
 
 call plug#end()
