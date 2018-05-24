@@ -46,11 +46,12 @@ set cscopequickfix=s-,c-,d-,i-,t-,e-,g-
 " Enable syntax folding and initially unfold everything
 set foldmethod=syntax
 set foldlevel=100
+
 " GUI/Terminal settings
 if has('gui_running')
   set lines=40
   set columns=180
-  colorscheme Base2Tone_SpaceDark
+  colorscheme paramount
   " set the GUI font to use
   if has("gui_gtk2")
     set guifont=FiraCode\ 9
@@ -60,7 +61,7 @@ if has('gui_running')
   set lines=40
   set columns=120
   " GUI Airline
-  let g:airline_theme='Base2Tone_SpaceDark'
+  let g:airline_theme='base16_grayscale'
 else
   set t_vb=
   set t_Co=256

@@ -4,7 +4,7 @@ else
   call plug#begin('~/.vim/plugged')
 endif
 
-Plug 'atelierbram/base2tone-vim'
+" Plugins
 Plug 'tpope/vim-fugitive'
 Plug 'embear/vim-localvimrc'
 Plug 'nvie/vim-flake8'
@@ -26,5 +26,8 @@ Plug 'roman/golden-ratio'
 Plug 'Shougo/denite.nvim'
 Plug 'OmniSharp/omnisharp-vim'
 Plug 'ludovicchabant/vim-gutentags'
+
+" Color themes
+Plug 'owickstrom/vim-colors-paramount'
 
 call plug#end()
