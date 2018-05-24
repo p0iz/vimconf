@@ -54,9 +54,9 @@ if has('gui_running')
   colorscheme paramount
   " set the GUI font to use
   if has("gui_gtk2")
-    set guifont=FiraCode\ 9
+    set guifont=FiraCodeRetina\ 12
   elseif has("gui_win32")
-    set guifont=Fira_Code:h9:cANSI:qDRAFT
+    set guifont=Fira_Code_Retina:h12:cANSI:qDRAFT
   endif
   set lines=40
   set columns=120
