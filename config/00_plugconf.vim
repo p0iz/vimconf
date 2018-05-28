@@ -27,6 +27,7 @@ Plug 'Shougo/denite.nvim'
 Plug 'OmniSharp/omnisharp-vim'
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'KabbAmine/zeavim.vim'
+Plug 'tpope/vim-sleuth'
 
 " Color themes
 Plug 'owickstrom/vim-colors-paramount'
