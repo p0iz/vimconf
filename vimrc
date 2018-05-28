@@ -192,7 +192,6 @@ nnoremap <F3> :TagbarToggle<Enter>
 " Denite
 call denite#custom#option('default', {
         \ 'prompt': '>',
-        \ 'split':'no',
         \ 'highlight_mode_normal': 'CursorLine',
         \ 'highlight_mode_insert': 'CursorLine'
         \ })
