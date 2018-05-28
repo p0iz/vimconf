@@ -228,6 +228,15 @@ nnoremap <leader>f :<C-u>Denite file_rec<CR>
 nnoremap <leader>b :<C-u>Denite buffer<CR>
 nnoremap <leader>r :<C-u>DeniteCursorWord grep:. -mode=normal<CR>
 
+" Zeavim
+nmap <leader>z <Plug>Zeavim
+vmap <leader>z <Plug>ZVVisSelection
+nmap gz <Plug>ZVOperator
+nmap <leader><leader>z <Plug>ZVKeyDocset
+let g:zv_file_types = {
+            \   'cs': 'mono,net,unity3d',
+            \ }
+
 " Asyncomplete
 let g:asyncomplete_remove_duplicates = 1
 

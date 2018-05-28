@@ -26,6 +26,7 @@ Plug 'roman/golden-ratio'
 Plug 'Shougo/denite.nvim'
 Plug 'OmniSharp/omnisharp-vim'
 Plug 'ludovicchabant/vim-gutentags'
+Plug 'KabbAmine/zeavim.vim'
 
 " Color themes
 Plug 'owickstrom/vim-colors-paramount'
