@@ -46,6 +46,7 @@ set cscopequickfix=s-,c-,d-,i-,t-,e-,g-
 " Enable syntax folding and initially unfold everything
 set foldmethod=syntax
 set foldlevel=100
+set completeopt=menu,longest
 
 " GUI/Terminal settings
 if has('gui_running')
