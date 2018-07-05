@@ -236,6 +236,3 @@ let g:zv_file_types = {
             \   'cs': 'mono,net,unity3d',
             \ }
 
-" Asyncomplete
-let g:asyncomplete_remove_duplicates = 1
-
