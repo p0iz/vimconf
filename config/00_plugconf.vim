@@ -25,6 +25,7 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'vim-syntastic/syntastic'
 
 " Color themes
+Plug 'altercation/vim-colors-solarized'
 Plug 'owickstrom/vim-colors-paramount'
 
 call plug#end()

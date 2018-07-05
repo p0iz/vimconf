@@ -49,10 +49,10 @@ set foldlevel=100
 set completeopt=menu,longest
 
 " GUI/Terminal settings
+colorscheme solarized
 if has('gui_running')
   set lines=40
   set columns=180
-  colorscheme paramount
   " set the GUI font to use
   if has("gui_gtk2")
     set guifont=FiraCodeRetina\ 11
@@ -62,11 +62,11 @@ if has('gui_running')
   set lines=40
   set columns=120
   " GUI Airline
-  let g:airline_theme='base16_grayscale'
+  let g:airline_theme='solarized'
+  set background=light
 else
   set t_vb=
   set t_Co=256
-  colorscheme default
 endif
 
 " Set a better title
