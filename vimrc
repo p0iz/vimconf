@@ -237,3 +237,6 @@ let g:zv_file_types = {
             \   'cs': 'mono,net,unity3d',
             \ }
 
+" Fast buffer browsing
+nnoremap <silent> <C-w>l :bn<CR>
+nnoremap <silent> <C-w>h :bp<CR>
