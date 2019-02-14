@@ -58,6 +58,8 @@ if has('gui_running')
     set guifont=FiraCodeRetina\ 11
   elseif has("gui_win32")
     set guifont=Fira_Code_Retina:h11:cANSI:qDRAFT
+  elseif has("gui_macvim")
+    set guifont=FiraCode-Retina:h14
   endif
   set lines=40
   set columns=120
