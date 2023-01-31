@@ -82,9 +82,9 @@ set undodir=~/.vim/undo//
 
 " Highlight extra whitespace at the end of a line
 highlight ExtraWhitespace ctermbg=red guibg=red
-autocmd Syntax * syn match ExtraWhitespace /\s\+$/
+autocmd Syntax * match ExtraWhitespace /\s\+$/
 highlight MixedIndentation ctermbg=darkgreen guibg=lightgreen
-autocmd Syntax * syn match MixedIndentation /^\t\+ \s*\|^ \+\t\s*/
+autocmd Syntax * match MixedIndentation /^\t\+ \s*\|^ \t\s*/
 " Highlight current line in active buffer
 augroup BgHighlight
   autocmd!
