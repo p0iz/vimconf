@@ -49,8 +49,8 @@ set foldlevel=100
 set completeopt=menu,longest
 
 " GUI/Terminal settings
-colorscheme solarized
 if has('gui_running')
+  colorscheme solarized
   set lines=40
   set columns=180
   " set the GUI font to use
