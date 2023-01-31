@@ -100,9 +100,6 @@ set grepprg=rg\ --vimgrep
 let g:flake8_show_in_gutter = 1
 autocmd BufWritePost ft=python call Flake8()
 
-" Always persist local vimrc config
-let g:localvimrc_persistent = 2
-
 " Airline config
 let g:airline_powerline_fonts = 1
 
