@@ -199,5 +199,5 @@ let g:zv_file_types = {
             \ }
 
 " Fast buffer browsing
-nnoremap <silent> <C-w>l :bn<CR>
-nnoremap <silent> <C-w>h :bp<CR>
+nnoremap <silent> <C-w>n :bn<CR>
+nnoremap <silent> <C-w>p :bp<CR>
