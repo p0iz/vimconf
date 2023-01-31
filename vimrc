@@ -151,8 +151,8 @@ nnoremap <silent> <C-w>D :CloseOthers<CR>
 nnoremap <silent> <C-w><C-D> :CloseOthers<CR>
 
 " Jump to start/end of line
-nnoremap H ^
-nnoremap L $
+noremap H ^
+noremap L $
 
 " Tab management
 nnoremap <C-t> :tabnew<Enter>
