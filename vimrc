@@ -72,7 +72,7 @@ else
 endif
 
 " Set a better title
-autocmd BufEnter * let &titlestring = $USERNAME . "@" . hostname() . ' [' . expand("%:t") . "]"
+autocmd BufEnter * let &titlestring = '[' . expand("%") . "] @" . hostname()
 set title
 
 " Backup, swap and undo
