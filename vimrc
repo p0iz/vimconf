@@ -116,20 +116,20 @@ noremap <S-Insert> <MiddleMouse>
 noremap! <S-Insert> <MiddleMouse>
 
 " Open quickfix window
-nnoremap <leader>q :copen 20<CR>
+nnoremap <silent> <leader>q :copen 20<CR>
 
 " Open location list
-nnoremap <leader>l :lopen 20<CR>
+nnoremap <silent> <leader>l :lopen 20<CR>
 
 " Save
 nnoremap <silent> <leader>s :w<CR>
 nnoremap <silent> <leader>S :wa<CR>
 
 " Resizing stuff
-nnoremap <C-Left> :vertical res -1<CR>
-nnoremap <C-Up> :res -1<CR>
-nnoremap <C-Right> :vertical res +1<CR>
-nnoremap <C-Down> :res +1<CR>
+nnoremap <silent> <C-Left> :vertical res -1<CR>
+nnoremap <silent> <C-Up> :res -1<CR>
+nnoremap <silent> <C-Right> :vertical res +1<CR>
+nnoremap <silent> <C-Down> :res +1<CR>
 
 " Delete current buffer
 nnoremap <silent> <C-w>d :bd<CR>
